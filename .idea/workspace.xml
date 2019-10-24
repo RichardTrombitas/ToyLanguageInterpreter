@@ -2,28 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/Exp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/ValueExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Types/BoolType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Types/IntType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Types/Type.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Values/BoolValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Values/IntValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Values/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/DataStructureException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/ExpEvalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exceptions/StmtExecException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyIDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyIList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyIStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +43,12 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Exceptions" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -93,7 +92,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
