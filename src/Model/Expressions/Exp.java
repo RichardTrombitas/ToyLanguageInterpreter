@@ -1,4 +1,5 @@
 package Model.Expressions;
+import Model.DataStructures.MyIDictionary;
 import Model.Values.Value;
 
 public interface Exp {

@@ -1,5 +1,8 @@
 package Model.Values;
 
+import Model.Types.IntType;
+import Model.Types.Type;
+
 public class IntValue implements Value {
     int val;
 
