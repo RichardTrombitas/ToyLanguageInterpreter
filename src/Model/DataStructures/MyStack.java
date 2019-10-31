@@ -1,7 +1,15 @@
 package Model.DataStructures;
-import Model.Types.Type;
-public class MyStack<T> implements MyIStack<T>{
-    Type<T> stack; //a field whose type Type is an appropriate generic java library
-                    //collection
-    //......................
+
+import java.util.Stack;
+
+public class MyStack<T> implements MyIStack<T> {
+    private Stack<T> stack = new Stack<>();
+
+    public T pop(){
+        return stack.pop();
+    }
+
+    public void push(T elem){
+        stack.push(elem);
+    }
 }

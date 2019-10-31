@@ -1,13 +1,7 @@
 package Model.DataStructures;
 
-import Model.Values.Value;
-
-public interface MyIDictionary<T1, T2> {
-    boolean isDefined(T1 id);
-
-    T2 lookup(T1 id);
-
-    void update(T1 id, T2 val);
-
-
+public interface MyIDictionary<K, V> {
+    boolean isDefined(K id);
+    V lookup(K id);
+    void update(K id, V val);
 }

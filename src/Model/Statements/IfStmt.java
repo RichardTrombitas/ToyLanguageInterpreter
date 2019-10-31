@@ -8,9 +8,9 @@ import Model.Types.BoolType;
 import Model.Values.Value;
 
 public class IfStmt implements IStmt {
-    Exp exp;
-    IStmt thenS;
-    IStmt elseS;
+    private Exp exp;
+    private IStmt thenS;
+    private IStmt elseS;
 
     public IfStmt(Exp exp, IStmt thenS, IStmt elseS) {
         this.exp = exp;

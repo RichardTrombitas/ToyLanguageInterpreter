@@ -1,5 +1,6 @@
 package Model.Expressions;
 import Model.DataStructures.MyIDictionary;
+import Model.MyException;
 import Model.Values.Value;
 
 public class VarExp implements Exp {
@@ -15,8 +16,7 @@ public class VarExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) {
+    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
         return tbl.lookup(id);
     }
-    //....
 }

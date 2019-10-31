@@ -10,7 +10,7 @@ public class PrgState {
     private MyIStack<IStmt> exeStack;
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
-    private IStmt originalProgram; //optional field, but good to have
+    //private IStmt originalProgram; //optional field, but good to have
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg) {
         exeStack = stk;
@@ -23,6 +23,22 @@ public class PrgState {
     public MyIStack<IStmt> getStk() {
         return exeStack;
     }
-    public MyIList<Value> getOutList() {return out;}
+    public void setStk(MyIStack<IStmt> stk) {
+        exeStack = stk;
+    }
+
     public MyIDictionary<String, Value> getTbl() {return symTable;}
+    public void setTbl(MyIDictionary<String, Value> symtbl) {
+        symTable = symtbl;
+    }
+
+    public MyIList<Value> getOutList() {return out;}
+    public void setOutList(MyIList<Value> ot) {
+        out = ot;
+    }
+
+    @Override
+    public String toString(){
+        return "\n" + exeStack.toString() + "\n" + symTable.toString() + "\n" + out.toString() + "\n";
+    }
 }
