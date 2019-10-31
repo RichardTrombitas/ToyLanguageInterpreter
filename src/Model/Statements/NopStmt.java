@@ -1,5 +1,17 @@
 package Model.Statements;
 
-public class NopStmt implements Istmt{
-    // ..........................
+import Model.DataStructures.MyIStack;
+import Model.MyException;
+import Model.PrgState;
+
+public class NopStmt implements IStmt{
+
+    @Override
+    public String toString(){ return "no operation"; }
+
+    public PrgState execute(PrgState state) throws MyException {
+        MyIStack<IStmt> stk = state.getStk();
+        stk.pop();
+        return state;
+    }
 }

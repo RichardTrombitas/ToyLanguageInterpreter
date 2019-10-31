@@ -12,9 +12,11 @@ public class CompStmt implements IStmt {
         this.snd = snd;
     }
 
+    @Override
     public String toString() {
         return "("+first.toString() + ";" + snd.toString()+")";
     }
+
     public PrgState execute(PrgState state){
         MyIStack<IStmt> stk = state.getStk();
         stk.push(snd);

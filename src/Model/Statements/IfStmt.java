@@ -12,12 +12,13 @@ public class IfStmt implements IStmt {
     IStmt thenS;
     IStmt elseS;
 
-    IfStmt(Exp exp, IStmt thenS, IStmt elseS) {
+    public IfStmt(Exp exp, IStmt thenS, IStmt elseS) {
         this.exp = exp;
         this.thenS = thenS;
         this.elseS = elseS;
     }
 
+    @Override
     public String toString() {
         return "IF(" + exp.toString() + ") THEN(" + thenS.toString() + ")ELSE(" + elseS.toString() + ")";
     }
@@ -28,7 +29,7 @@ public class IfStmt implements IStmt {
 
         Value cond = exp.eval(symTable);
 
-        if(!(cond.getType() instanceof BoolType)){
+        if(!cond.getType().equals(new BoolType())){
             throw new MyException("conditional expression is not a boolean");
         }
         else {

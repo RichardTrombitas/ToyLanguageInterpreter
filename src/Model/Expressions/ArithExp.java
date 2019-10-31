@@ -1,15 +1,42 @@
 package Model.Expressions;
 
+import Model.DataStructures.MyIDictionary;
+import Model.MyException;
+import Model.Types.IntType;
+import Model.Values.IntValue;
 import Model.Values.Value;
 
 public class ArithExp implements Exp {
-    Exp e1;
-    Exp e2;
-    int op; //1-plus, 2-minus, 3-star, 4-divide
-    //....
+    private Exp e1;
+    private Exp e2;
+    private int op; //1-plus, 2-minus, 3-star, 4-divide
+
+    public ArithExp(Exp e1, Exp e2, int op) throws MyException {
+        this.e1 = e1;
+        this.e2 = e2;
+        if (op < 1 || op > 4) throw new MyException("invalid operator");
+        this.op = op;
+    }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws Exception {
+    public String toString() {
+        StringBuilder res = new StringBuilder(e1.toString()).append(" ");
+        switch (op) {
+            case 1:
+                res.append("+");
+            case 2:
+                res.append("-");
+            case 3:
+                res.append("*");
+            case 4:
+                res.append("/");
+        }
+        res.append(" ").append(e2.toString());
+        return res.toString();
+    }
+
+
+    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
         Value v1, v2;
         v1 = e1.eval(tbl);
         if (v1.getType().equals(new IntType())) {
@@ -18,14 +45,14 @@ public class ArithExp implements Exp {
                 IntValue i1 = (IntValue) v1;
                 IntValue i2 = (IntValue) v2;
                 int n1, n2;
-                n1 = v1.getVal();
-                n2 = v2.getVal();
+                n1 = i1.getVal();
+                n2 = i2.getVal();
                 if (op == 1) return new IntValue(n1 + n2);
                 if (op == 2) return new IntValue(n1 - n2);
                 if (op == 3) return new IntValue(n1 * n2);
                 if (op == 4) {
                     if (n2 == 0) {
-                        throw new Exception("division by zero");
+                        throw new MyException("division by zero");
                     } else {
                         return new IntValue(n1 / n2);
                     }
@@ -36,5 +63,6 @@ public class ArithExp implements Exp {
                 throw new MyException("first operand is not an integer");
             }
         }
+        return new IntValue(0);
     }
 }

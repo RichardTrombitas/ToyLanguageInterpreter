@@ -4,7 +4,8 @@ import Model.Types.IntType;
 import Model.Types.Type;
 
 public class IntValue implements Value {
-    int val;
+
+    private int val;
 
     public IntValue(int v) {
         val = v;
@@ -16,7 +17,7 @@ public class IntValue implements Value {
 
     @Override
     public String toString() {
-        //...
+        return Integer.toString(val);
     }
 
     public Type getType() {

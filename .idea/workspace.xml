@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/MyException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/DataStructureException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/ExpEvalException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Exceptions/StmtExecException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/DataStructures/MyIDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyIDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/DataStructures/MyIList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyIList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Expressions/Exp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/Exp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ValueExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ValueExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Types/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Types/BoolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Values/BoolValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Values/BoolValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Values/IntValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Values/IntValue.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
