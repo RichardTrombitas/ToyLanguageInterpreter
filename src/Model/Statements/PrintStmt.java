@@ -21,7 +21,6 @@ public class PrintStmt implements IStmt {
     public PrgState execute(PrgState state) throws MyException {
 
         MyIStack<IStmt> stk = state.getStk();
-        stk.pop();
 
         MyIList<Value> out = state.getOutList();
         MyIDictionary<String, Value> symTable = state.getTbl();

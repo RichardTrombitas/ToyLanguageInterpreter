@@ -87,7 +87,7 @@ public class Main {
                     break;
                 case 2:
                     ctrl.allStep();
-                    break;
+                    return;
                 case 0:
                     break;
             }

@@ -17,7 +17,7 @@ public class UI {
 
     static int askMenuOption() throws IOException {
         System.out.println("Choose an option:\n" +
-                "\t1 - input a program\n" +
+                "\t1 - select a program\n" +
                 "\t2 - complete execution of a program\n" +
                 "\t0 - exit");
         Scanner input = new Scanner(System.in);

@@ -3,6 +3,8 @@ import Model.DataStructures.MyIDictionary;
 import Model.DataStructures.MyIStack;
 import Model.MyException;
 import Model.PrgState;
+import Model.Types.BoolType;
+import Model.Types.IntType;
 import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
@@ -22,18 +24,17 @@ public class VarDeclStmt implements IStmt {
 
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getStk();
-        stk.pop();
 
         MyIDictionary<String, Value> symTable = state.getTbl();
         if(symTable.isDefined(name)) {
             throw new MyException("variable is already declared");
         }
         else {
-            if(typ instanceof BoolValue)
+            if(typ instanceof BoolType)
             {
                 symTable.update(name, new BoolValue(false));
             }
-            if(typ instanceof IntValue)
+            if(typ instanceof IntType)
             {
                 symTable.update(name, new IntValue(0));
             }

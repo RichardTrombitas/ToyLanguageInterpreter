@@ -19,9 +19,7 @@ public class Controller {
         MyIStack<IStmt> stk=state.getStk();
         if(stk.isEmpty()) throw new MyException("prgstate stack is empty");
         IStmt crtStmt = stk.pop();
-        PrgState newPrgState = crtStmt.execute(state);
-        if(displayFlag) System.out.println(newPrgState.toString()+'\n');
-        return newPrgState;
+        return crtStmt.execute(state);
     }
 
     public void allStep() throws MyException {

@@ -11,7 +11,6 @@ public class NopStmt implements IStmt{
 
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getStk();
-        stk.pop();
         return state;
     }
 }

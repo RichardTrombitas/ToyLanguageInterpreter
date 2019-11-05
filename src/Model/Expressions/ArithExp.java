@@ -21,18 +21,22 @@ public class ArithExp implements Exp {
 
     @Override
     public String toString() {
-        StringBuilder res = new StringBuilder(e1.toString()).append(" ");
+        StringBuilder res = new StringBuilder(e1.toString());
         switch (op) {
             case 1:
                 res.append("+");
+                break;
             case 2:
                 res.append("-");
+                break;
             case 3:
                 res.append("*");
+                break;
             case 4:
                 res.append("/");
+                break;
         }
-        res.append(" ").append(e2.toString());
+        res.append(e2.toString());
         return res.toString();
     }
 

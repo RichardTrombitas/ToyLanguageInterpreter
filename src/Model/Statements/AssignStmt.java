@@ -24,7 +24,6 @@ public class AssignStmt implements IStmt {
 
     public PrgState execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getStk();
-        stk.pop();
         MyIDictionary<String, Value> symTbl = state.getTbl();
         Value val = exp.eval(symTbl);
         if (symTbl.isDefined(id)) {
