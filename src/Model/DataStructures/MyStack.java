@@ -12,4 +12,13 @@ public class MyStack<T> implements MyIStack<T> {
     public void push(T elem){
         stack.push(elem);
     }
+
+    public boolean isEmpty(){
+        return stack.isEmpty();
+    }
+
+    @Override
+    public String toString(){
+        return stack.toString();
+    }
 }

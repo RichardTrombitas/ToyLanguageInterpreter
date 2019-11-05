@@ -1,32 +1,41 @@
 package Controller;
 
-import Exceptions.StmtExecException;
 import Model.DataStructures.MyIStack;
+import Model.MyException;
 import Model.PrgState;
 import Model.Statements.IStmt;
 import Repository.IRepository;
 
 public class Controller {
     private IRepository repo;
+    private boolean displayFlag;
 
-    PrgState oneStep(PrgState state) {
-        MyIStack<IStmt> stk = state.getStk();
-        if (stk.isEmpty()) throw new StmtExecException(...);
-        IStmt crtStmt = stk.pop();
-        return crtStmt.execute(state);
+    public Controller(IRepository repo, boolean displayFlag){
+        this.repo = repo;
+        this.displayFlag = displayFlag;
     }
 
-    void allStep() {
-        PrgState prg = repo.getCrtPrg(); // repo is the controller field of type IRepository
-        while (!prg.getStk().isEmpty()) {
+    public PrgState oneStep(PrgState state) throws MyException {
+        MyIStack<IStmt> stk=state.getStk();
+        if(stk.isEmpty()) throw new MyException("prgstate stack is empty");
+        IStmt crtStmt = stk.pop();
+        PrgState newPrgState = crtStmt.execute(state);
+        if(displayFlag) System.out.println(newPrgState.toString()+'\n');
+        return newPrgState;
+    }
+
+    public void allStep() throws MyException {
+        PrgState prg = repo.getCrtPrg();
+
+        if(displayFlag) System.out.println(prg.toString()+'\n');
+
+        while (!prg.getStk().isEmpty()){
             oneStep(prg);
-            //here you can display the prg state
+            if(displayFlag) System.out.println(prg.toString()+'\n');
         }
     }
 
-    something displayState(maybesomething){
-        //display the current program state. You may want to display the program state after each
-        //execution step if the display flag is set to on.
-    }
+    public void enableDisplayFlag(){this.displayFlag = true;}
+    public void disableDisplayFlag(){this.displayFlag = false;}
 
 }

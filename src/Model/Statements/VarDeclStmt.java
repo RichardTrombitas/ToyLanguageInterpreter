@@ -4,6 +4,8 @@ import Model.DataStructures.MyIStack;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.Type;
+import Model.Values.BoolValue;
+import Model.Values.IntValue;
 import Model.Values.Value;
 
 public class VarDeclStmt implements IStmt {
@@ -27,7 +29,14 @@ public class VarDeclStmt implements IStmt {
             throw new MyException("variable is already declared");
         }
         else {
-            symTable.add? or update? not sure (defaultvalue)
+            if(typ instanceof BoolValue)
+            {
+                symTable.update(name, new BoolValue(false));
+            }
+            if(typ instanceof IntValue)
+            {
+                symTable.update(name, new IntValue(0));
+            }
         }
         return state;
     }

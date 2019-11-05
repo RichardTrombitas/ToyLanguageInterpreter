@@ -9,4 +9,17 @@ public class MyList<T> implements MyIList<T> {
     public void add(T elem){
         list.add(elem);
     }
+
+    public T getFromIdx(int i){
+        return list.get(i);
+    }
+
+    public void setAtIdx(int i, T elem){
+        list.set(i, elem);
+    }
+
+    @Override
+    public String toString(){
+        return list.toString();
+    }
 }

@@ -12,7 +12,8 @@ public class AssignStmt implements IStmt {
     private String id;
     private Exp exp;
 
-    public AssignStmt(Exp exp){
+    public AssignStmt(String id, Exp exp){
+        this.id = id;
         this.exp = exp;
     }
 
@@ -27,7 +28,7 @@ public class AssignStmt implements IStmt {
         MyIDictionary<String, Value> symTbl = state.getTbl();
         Value val = exp.eval(symTbl);
         if (symTbl.isDefined(id)) {
-            Type typId = (symTbl.getValue(id)).getType();
+            Type typId = (symTbl.lookup(id)).getType();
             if ((val.getType()).equals(typId)) {
                 symTbl.update(id, val);
             } else {

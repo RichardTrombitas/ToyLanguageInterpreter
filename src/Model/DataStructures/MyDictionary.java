@@ -17,4 +17,10 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
     public void update(K id, V val) {
         map.put(id, val);
     }
+
+    @Override
+    public String toString(){
+        return map.toString();
+    }
+
 }

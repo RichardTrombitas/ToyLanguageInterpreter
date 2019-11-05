@@ -5,6 +5,7 @@ import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.BoolType;
+import Model.Values.BoolValue;
 import Model.Values.Value;
 
 public class IfStmt implements IStmt {
@@ -33,7 +34,8 @@ public class IfStmt implements IStmt {
             throw new MyException("conditional expression is not a boolean");
         }
         else {
-            if(cond == true){
+            BoolValue val = (BoolValue) cond;
+            if(val.getVal()){
                 stk.push(thenS);
             }
             else {
@@ -43,7 +45,6 @@ public class IfStmt implements IStmt {
 
         return state;
     }
-    // ...
 }
 
 
