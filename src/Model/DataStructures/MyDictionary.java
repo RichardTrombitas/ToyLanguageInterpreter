@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MyDictionary<K, V> implements MyIDictionary<K, V> {
-    public Map<K, V> map = new HashMap<>();
+    private Map<K, V> map = new HashMap<>();
 
     public boolean isDefined(K id) {
         return map.containsKey(id);

@@ -4,7 +4,7 @@ import Model.MyException;
 import Model.Values.Value;
 
 public class VarExp implements Exp {
-    String id;
+    private String id;
 
     public VarExp(String id){
         this.id = id;

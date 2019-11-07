@@ -3,24 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/ArithExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/ArithExp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/AssignStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/AssignStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/IfStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/IfStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/NopStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/NopStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/PrintStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/PrintStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/VarDeclStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/VarDeclStmt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/View/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/View/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/UI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/DataStructures/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Types/BoolType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Types/BoolType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Types/IntType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Types/IntType.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
