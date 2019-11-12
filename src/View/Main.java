@@ -88,8 +88,6 @@ public class Main {
                 case 2:
                     ctrl.allStep();
                     return;
-                case 0:
-                    break;
             }
             menuOption = UI.askMenuOption();
         }

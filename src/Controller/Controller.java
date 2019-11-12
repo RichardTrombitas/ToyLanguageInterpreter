@@ -6,6 +6,8 @@ import Model.PrgState;
 import Model.Statements.IStmt;
 import Repository.IRepository;
 
+import java.io.IOException;
+
 public class Controller {
     private IRepository repo;
     private boolean displayFlag;
@@ -22,14 +24,16 @@ public class Controller {
         crtStmt.execute(state);
     }
 
-    public void allStep() throws MyException {
+    public void allStep() throws MyException, IOException {
         PrgState prg = repo.getCrtPrg();
 
         if(displayFlag) System.out.println(prg.toString()+'\n');
+        repo.logPrgStateExec();
 
         while (!prg.getStk().isEmpty()){
             oneStep(prg);
             if(displayFlag) System.out.println(prg.toString()+'\n');
+            repo.logPrgStateExec();
         }
     }
 
