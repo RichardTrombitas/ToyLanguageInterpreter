@@ -1,10 +1,5 @@
 ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
+[(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))]
 SymTable:
 
 Out:
@@ -12,11 +7,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
+[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
 SymTable:
 
 Out:
@@ -24,11 +15,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
+[(int b;(a=2+3*5;(b=a+1;print(b))))]
 SymTable:
 
 Out:
@@ -36,10 +23,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
+[(a=2+3*5;(b=a+1;print(b))), int b]
 SymTable:
 
 Out:
@@ -47,10 +31,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
+[(a=2+3*5;(b=a+1;print(b)))]
 SymTable:
 
 Out:
@@ -58,9 +39,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-b=a+1
-print(b)
-
+[(b=a+1;print(b)), a=2+3*5]
 SymTable:
 
 Out:
@@ -68,9 +47,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-b=a+1
-print(b)
-
+[(b=a+1;print(b))]
 SymTable:
 
 Out:
@@ -78,8 +55,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-print(b)
-
+[print(b), b=a+1]
 SymTable:
 
 Out:
@@ -87,7 +63,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-
+[print(b)]
 SymTable:
 
 Out:
@@ -95,445 +71,7 @@ Out:
 FileTable:
 _______________________________
 ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int a
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int b
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=2+3*5
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-b=a+1
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-print(b)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-boolean a
-int v
-a=true
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-boolean a
-int v
-a=true
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int v
-a=true
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-int v
-a=true
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=true
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-a=true
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-IF(a) THEN (v=2) ELSE (v=3)
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-v=2
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-print(v)
-
-SymTable:
-
-Out:
-
-FileTable:
-_______________________________
-ExeStack:
-
+[]
 SymTable:
 
 Out:
