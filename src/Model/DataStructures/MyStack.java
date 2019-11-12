@@ -18,13 +18,12 @@ public class MyStack<T> implements MyIStack<T> {
         return stack.isEmpty();
     }
 
-//    @Override
-//    public String toString(){
-//        return stack.toString();
-//    }
-
     @Override
     public String toString(){
+        return stack.toString();
+    }
+
+    public String toStringSpecial(){
         StringBuilder res = new StringBuilder();
         ListIterator li = stack.listIterator(stack.size());
         while (li.hasPrevious()) {

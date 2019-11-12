@@ -10,6 +10,7 @@ public class MyList<T> implements MyIList<T> {
         list.add(elem);
     }
 
+
     public T getFromIdx(int i){
         return list.get(i);
     }
@@ -21,5 +22,13 @@ public class MyList<T> implements MyIList<T> {
     @Override
     public String toString(){
         return list.toString();
+    }
+
+    public String toStringSpecial() {
+        StringBuilder res = new StringBuilder();
+        for(T el : list){
+            res.append(el.toString()).append("\n");
+        }
+        return res.toString();
     }
 }

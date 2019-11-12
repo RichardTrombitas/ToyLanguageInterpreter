@@ -31,11 +31,11 @@ public class Repository implements IRepository{
     //TODO
         PrintWriter logFile= new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
         logFile.write("ExeStack:\n");
-        logFile.write(prgState.getStk().toString()+"\n");
+        logFile.write(prgState.getStk().toStringSpecial()+"\n");
         logFile.write("SymTable:\n");
-        logFile.write("\n");
+        logFile.write(prgState.getTbl().toStringSpecial()+"\n");
         logFile.write("Out:\n");
-        logFile.write("\n");
+        logFile.write(prgState.getOutList().toStringSpecial()+"\n");
         logFile.write("FileTable:\n");
         logFile.write("_______________________________\n");
         logFile.close();
