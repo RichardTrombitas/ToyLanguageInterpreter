@@ -1,7 +1,6 @@
 package Model.Statements;
 
 import Model.DataStructures.MyIDictionary;
-import Model.DataStructures.MyIStack;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
@@ -22,8 +21,7 @@ public class AssignStmt implements IStmt {
         return id + "=" + exp.toString();
     }
 
-    public PrgState execute(PrgState state) throws MyException {
-        MyIStack<IStmt> stk = state.getStk();
+    public void execute(PrgState state) throws MyException {
         MyIDictionary<String, Value> symTbl = state.getTbl();
         Value val = exp.eval(symTbl);
         if (symTbl.isDefined(id)) {
@@ -36,7 +34,6 @@ public class AssignStmt implements IStmt {
         } else {
             throw new MyException("the used variable" + id + " was not declared before");
         }
-        return state;
     }
 }
 

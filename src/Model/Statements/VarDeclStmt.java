@@ -1,6 +1,5 @@
 package Model.Statements;
 import Model.DataStructures.MyIDictionary;
-import Model.DataStructures.MyIStack;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.BoolType;
@@ -22,8 +21,7 @@ public class VarDeclStmt implements IStmt {
     @Override
     public String toString(){ return typ + " " + name; }
 
-    public PrgState execute(PrgState state) throws MyException {
-        MyIStack<IStmt> stk = state.getStk();
+    public void execute(PrgState state) throws MyException {
 
         MyIDictionary<String, Value> symTable = state.getTbl();
         if(symTable.isDefined(name)) {
@@ -39,7 +37,6 @@ public class VarDeclStmt implements IStmt {
                 symTable.update(name, new IntValue(0));
             }
         }
-        return state;
     }
 
 

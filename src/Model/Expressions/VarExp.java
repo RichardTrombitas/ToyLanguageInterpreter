@@ -16,7 +16,7 @@ public class VarExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
+    public Value eval(MyIDictionary<String, Value> tbl) {
         return tbl.lookup(id);
     }
 }

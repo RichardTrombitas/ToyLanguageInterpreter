@@ -24,7 +24,7 @@ public class IfStmt implements IStmt {
         return "IF(" + exp.toString() + ") THEN (" + thenS.toString() + ") ELSE (" + elseS.toString() + ")";
     }
 
-    public PrgState execute(PrgState state) throws MyException {
+    public void execute(PrgState state) throws MyException {
         MyIStack<IStmt> stk = state.getStk();
         MyIDictionary<String, Value> symTable = state.getTbl();
 
@@ -43,7 +43,6 @@ public class IfStmt implements IStmt {
             }
         }
 
-        return state;
     }
 }
 

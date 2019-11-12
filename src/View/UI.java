@@ -3,9 +3,9 @@ package View;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class UI {
+class UI {
 
-    static int askWhichProgram() throws IOException {
+    static int askWhichProgram() {
         System.out.println("Select a program from the following:\n" +
                 "\t1  -  int v; v=2; Print(v)\n" +
                 "\t2  -  int a; int b; a=2+3*5; b=a+1; Print(b)\n" +
@@ -15,7 +15,7 @@ public class UI {
         return input.nextInt();
     }
 
-    static int askMenuOption() throws IOException {
+    static int askMenuOption() {
         System.out.println("Choose an option:\n" +
                 "\t1 - select a program\n" +
                 "\t2 - complete execution of a program\n" +

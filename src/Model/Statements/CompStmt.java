@@ -17,10 +17,9 @@ public class CompStmt implements IStmt {
         return "("+first.toString() + ";" + snd.toString()+")";
     }
 
-    public PrgState execute(PrgState state){
+    public void execute(PrgState state){
         MyIStack<IStmt> stk = state.getStk();
         stk.push(snd);
         stk.push(first);
-        return state;
     }
 }

@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/DataStructures/MyIStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyIStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/DataStructures/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataStructures/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/UI.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +29,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -28,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">

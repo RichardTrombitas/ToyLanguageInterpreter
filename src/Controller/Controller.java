@@ -15,11 +15,11 @@ public class Controller {
         this.displayFlag = displayFlag;
     }
 
-    public PrgState oneStep(PrgState state) throws MyException {
+    private void oneStep(PrgState state) throws MyException {
         MyIStack<IStmt> stk=state.getStk();
         if(stk.isEmpty()) throw new MyException("prgstate stack is empty");
         IStmt crtStmt = stk.pop();
-        return crtStmt.execute(state);
+        crtStmt.execute(state);
     }
 
     public void allStep() throws MyException {
