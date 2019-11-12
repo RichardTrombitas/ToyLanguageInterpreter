@@ -12,10 +12,13 @@ public class CompStmt implements IStmt {
         this.snd = snd;
     }
 
+//    @Override
+//    public String toString() {
+//        return "("+first.toString() + ";" + snd.toString()+")";
+//    }
+
     @Override
-    public String toString() {
-        return "("+first.toString() + ";" + snd.toString()+")";
-    }
+    public String toString() { return first.toString() + "\n" + snd.toString(); }
 
     public void execute(PrgState state){
         MyIStack<IStmt> stk = state.getStk();
