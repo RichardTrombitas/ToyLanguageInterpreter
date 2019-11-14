@@ -11,6 +11,10 @@ public class IntValue implements Value {
         val = v;
     }
 
+    public boolean equals(IntValue another) {
+        return val == another.getVal();
+    }
+
     public int getVal() {
         return val;
     }

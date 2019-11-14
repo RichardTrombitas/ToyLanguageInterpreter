@@ -11,6 +11,10 @@ public class BoolValue implements Value{
         val = v;
     }
 
+    public boolean equals(BoolValue another) {
+        return val == another.getVal();
+    }
+
     public boolean getVal() {
         return val;
     }

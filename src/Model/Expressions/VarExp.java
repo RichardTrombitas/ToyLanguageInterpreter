@@ -1,6 +1,5 @@
 package Model.Expressions;
 import Model.DataStructures.MyIDictionary;
-import Model.MyException;
 import Model.Values.Value;
 
 public class VarExp implements Exp {

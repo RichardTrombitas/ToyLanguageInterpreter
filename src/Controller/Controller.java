@@ -17,7 +17,7 @@ public class Controller {
         this.displayFlag = displayFlag;
     }
 
-    private void oneStep(PrgState state) throws MyException {
+    private void oneStep(PrgState state) throws MyException, IOException {
         MyIStack<IStmt> stk=state.getStk();
         if(stk.isEmpty()) throw new MyException("prgstate stack is empty");
         IStmt crtStmt = stk.pop();

@@ -28,7 +28,6 @@ public class Repository implements IRepository{
     }
 
     public void logPrgStateExec() throws IOException {
-    //TODO
         PrintWriter logFile= new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
         logFile.write("ExeStack:\n");
         logFile.write(prgState.getStk().toStringSpecial()+"\n");

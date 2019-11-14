@@ -5,8 +5,6 @@ import Model.PrgState;
 import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Types.Type;
-import Model.Values.BoolValue;
-import Model.Values.IntValue;
 import Model.Values.Value;
 
 public class VarDeclStmt implements IStmt {
@@ -30,11 +28,11 @@ public class VarDeclStmt implements IStmt {
         else {
             if(typ instanceof BoolType)
             {
-                symTable.update(name, new BoolValue(false));
+                symTable.update(name, new BoolType().defaultValue());
             }
             if(typ instanceof IntType)
             {
-                symTable.update(name, new IntValue(0));
+                symTable.update(name, new IntType().defaultValue());
             }
         }
     }

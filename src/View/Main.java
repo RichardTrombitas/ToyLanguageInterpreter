@@ -11,9 +11,11 @@ import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
+import Model.Values.StringValue;
 import Model.Values.Value;
 import Repository.Repository;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Main {
@@ -62,7 +64,8 @@ public class Main {
         MyIDictionary<String, Value> symtbl = new MyDictionary<>();
         MyIList<Value> out = new MyList<>();
         MyIStack<IStmt> stk = new MyStack<>();
-        PrgState crtPrgState = new PrgState(stk, symtbl, out, new NopStmt());
+        MyIDictionary<StringValue, BufferedReader> ft = new MyDictionary<>();
+        PrgState crtPrgState = new PrgState(stk, symtbl, out, new NopStmt(), ft);
         Repository repo = new Repository(crtPrgState);
         Controller ctrl = new Controller(repo, true);
 
