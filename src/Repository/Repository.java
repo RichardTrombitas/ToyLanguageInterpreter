@@ -19,9 +19,10 @@ public class Repository implements IRepository{
 //    }
 
     private PrgState prgState;
-    private String logFilePath="log.txt";
-    public Repository(PrgState s){
-        prgState = s;
+    private String logFilePath;
+    public Repository(PrgState prgState, String logFilePath){
+        this.prgState = prgState;
+        this.logFilePath = logFilePath;
     }
     public PrgState getCrtPrg() {
         return prgState;
