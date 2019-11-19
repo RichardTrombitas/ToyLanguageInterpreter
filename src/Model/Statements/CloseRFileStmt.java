@@ -33,8 +33,7 @@ public class CloseRFileStmt implements IStmt {
         BufferedReader br = ft.lookup((StringValue) val);
         br.close();
 
-        ft.
-        //• delete the entry from the FileTable
+        ft.delete((StringValue) val);
     }
 }
 

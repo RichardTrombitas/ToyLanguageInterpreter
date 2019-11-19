@@ -19,6 +19,8 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
         map.put(id, val);
     }
 
+    public void delete(K id) {map.remove(id);}
+
     @Override
     public String toString(){
         return map.toString();

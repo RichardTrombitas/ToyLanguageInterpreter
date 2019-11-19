@@ -90,9 +90,22 @@ public class Main {
                     break;
                 case 2:
                     ctrl.allStep();
+//                    ValueExp varf = new ValueExp(new StringValue("test.in"));
+//                    OpenRFileStmt s = new OpenRFileStmt(varf);
+//                    s.execute(crtPrgState);
+//                    ReadFileStmt s1 = new ReadFileStmt(varf,  "v");
+//                    s1.execute(crtPrgState);
+//                    System.out.println(crtPrgState.getTbl().lookup("v"));
+//                    ReadFileStmt s2 = new ReadFileStmt(varf,  "v");
+//                    s2.execute(crtPrgState);
+//                    System.out.println(crtPrgState.getTbl().lookup("v"));
+//                    CloseRFileStmt c = new CloseRFileStmt(varf);
                     return;
             }
             menuOption = UI.askMenuOption();
         }
+
+
+
     }
 }
