@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/RelationalExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Repository/Repository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/View/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/RunExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/RunExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/TextMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/TextMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/UI.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
