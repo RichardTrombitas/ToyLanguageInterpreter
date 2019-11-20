@@ -1,7 +1,7 @@
 package View;
 
 public class ExitCommand extends Command {
-    public ExitCommand(String key, String desc) {
+    ExitCommand(String key, String desc) {
         super(key, desc);
     }
 

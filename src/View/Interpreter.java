@@ -16,11 +16,10 @@ import Model.Values.Value;
 import Repository.IRepository;
 import Repository.Repository;
 import java.io.BufferedReader;
-import java.io.IOException;
 
 public class Interpreter {
 
-    public static void main(String[] args) throws MyException, IOException {
+    public static void main(String[] args) throws MyException {
 
         // hard coded programs here
 
