@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/RelationalExp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/OpenRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/OpenRFileStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/CloseRFileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/CloseRFileStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/OpenRFileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/OpenRFileStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/ReadFileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/ReadFileStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/ExitCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/ExitCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/RunExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/RunExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/TextMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/TextMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/UI.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
