@@ -18,6 +18,12 @@ public class CloseRFileStmt implements IStmt {
         this.exp = exp;
     }
 
+    @Override
+    public String toString() {
+        return "Close file: "+exp.toString();
+    }
+
+    @Override
     public void execute(PrgState state) throws MyException, IOException {
         MyIDictionary<StringValue, BufferedReader> ft = state.getFileTable();
         MyIDictionary<String, Value> symTbl = state.getTbl();

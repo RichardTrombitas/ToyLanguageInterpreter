@@ -21,6 +21,11 @@ public class RelationalExp implements Exp {
     }
 
     @Override
+    public String toString(){
+        return e1.toString() + rel + e2.toString();
+    }
+
+    @Override
     public BoolValue eval(MyIDictionary<String, Value> tbl) throws MyException {
         Value nr1 = e1.eval(tbl);
         if(nr1.getType().equals(new IntType())){

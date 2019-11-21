@@ -22,6 +22,12 @@ public class ReadFileStmt implements IStmt{
         this.varName = varName;
     }
 
+    @Override
+    public String toString() {
+        return "Read from the file "+exp.toString()+" a value for "+varName;
+    }
+
+    @Override
     public void execute(PrgState state) throws MyException, IOException {
         MyIDictionary<String, Value> symTbl = state.getTbl();
         MyIDictionary<StringValue, BufferedReader> ft = state.getFileTable();
