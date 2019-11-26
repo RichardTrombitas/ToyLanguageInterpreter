@@ -16,10 +16,11 @@ import Model.Values.Value;
 import Repository.IRepository;
 import Repository.Repository;
 import java.io.BufferedReader;
+import java.io.IOException;
 
 public class Interpreter {
 
-    public static void main(String[] args) throws MyException {
+    public static void main(String[] args) throws MyException, IOException {
 
         // hard coded programs here
 
@@ -81,15 +82,25 @@ public class Interpreter {
         menu.addCommand(new RunExample("2",ex2.toString(),ctr2));
         menu.addCommand(new RunExample("3",ex3.toString(),ctr3));
         menu.show();
+
+//        ctr1.allStep();
+//
+//        ValueExp varf = new ValueExp(new StringValue("test.in"));
+//        OpenRFileStmt s = new OpenRFileStmt(varf);
+//        s.execute(prg1);
+//
+//        ReadFileStmt s1 = new ReadFileStmt(varf,  "v");
+//        s1.execute(prg1);
+//
+//        System.out.println("v="+prg1.getTbl().lookup("v"));
+//
+//
+//        ReadFileStmt s2 = new ReadFileStmt(varf,  "v");
+//        s2.execute(prg1);
+//
+//        System.out.println("v="+prg1.getTbl().lookup("v"));
+//
+//        CloseRFileStmt c = new CloseRFileStmt(varf);
+
     }
 }
-//                    ValueExp varf = new ValueExp(new StringValue("test.in"));
-//                    OpenRFileStmt s = new OpenRFileStmt(varf);
-//                    s.execute(crtPrgState);
-//                    ReadFileStmt s1 = new ReadFileStmt(varf,  "v");
-//                    s1.execute(crtPrgState);
-//                    System.out.println(crtPrgState.getTbl().lookup("v"));
-//                    ReadFileStmt s2 = new ReadFileStmt(varf,  "v");
-//                    s2.execute(crtPrgState);
-//                    System.out.println(crtPrgState.getTbl().lookup("v"));
-//                    CloseRFileStmt c = new CloseRFileStmt(varf);
