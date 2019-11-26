@@ -20,6 +20,14 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
 
     public void delete(K id) {map.remove(id);}
 
+    public Map<K, V> getContent(){
+        return map;
+    }
+
+    public void setContent(Map<K,V> map){
+        this.map = map;
+    }
+
     @Override
     public String toString(){
         return map.toString();

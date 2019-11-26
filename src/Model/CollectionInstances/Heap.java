@@ -3,6 +3,8 @@ package Model.CollectionInstances;
 import Model.Collections.MyDictionary;
 import Model.Values.Value;
 
+import java.util.Map;
+
 public class Heap implements IHeap {
     private MyDictionary<Integer, Value> dictionary = new MyDictionary<>();
     private int endAddress = 0;
@@ -26,6 +28,14 @@ public class Heap implements IHeap {
 
     public boolean isDefined(Integer addr) {
         return dictionary.isDefined(addr);
+    }
+
+    public Map<Integer, Value> getContent(){
+        return dictionary.getContent();
+    }
+
+    public void setContent(Map<Integer, Value> map){
+        dictionary.setContent(map);
     }
 
     @Override
