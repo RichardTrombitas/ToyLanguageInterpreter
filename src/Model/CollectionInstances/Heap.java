@@ -5,10 +5,11 @@ import Model.Values.Value;
 
 public class Heap implements IHeap {
     private MyDictionary<Integer, Value> dictionary = new MyDictionary<>();
-    private int freeLocation = 0;
+    private int endAddress = 0;
 
-    public void allocate(Value val){
-        dictionary.update(++freeLocation, val);
+    public int allocate(Value val){
+        dictionary.update(++endAddress, val);
+        return endAddress;
     }
 
     public void deallocate(Integer addr){
@@ -23,9 +24,13 @@ public class Heap implements IHeap {
         dictionary.update(addr, val);
     }
 
+    public boolean isDefined(Integer addr) {
+        return dictionary.isDefined(addr);
+    }
+
     @Override
     public String toString(){
-        return dictionary.toString();
+        return "Heap: "+dictionary.toString();
     }
 
     public String toStringSpecial() {

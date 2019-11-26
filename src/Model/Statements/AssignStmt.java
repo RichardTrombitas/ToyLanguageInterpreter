@@ -1,5 +1,6 @@
 package Model.Statements;
 
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
@@ -23,7 +24,8 @@ public class AssignStmt implements IStmt {
 
     public void execute(PrgState state) throws MyException {
         ISymTable symTbl = state.getSymTbl();
-        Value val = exp.eval(symTbl);
+        IHeap hp = state.getHeap();
+        Value val = exp.eval(symTbl, hp);
         if (symTbl.isDefined(id)) {
             Type typId = (symTbl.lookup(id)).getType();
             if ((val.getType()).equals(typId)) {

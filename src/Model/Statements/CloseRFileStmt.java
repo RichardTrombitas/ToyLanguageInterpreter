@@ -1,6 +1,7 @@
 package Model.Statements;
 
 import Model.CollectionInstances.IFileTable;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
@@ -28,7 +29,8 @@ public class CloseRFileStmt implements IStmt {
     public void execute(PrgState state) throws MyException, IOException {
         IFileTable ft = state.getFileTable();
         ISymTable symTbl = state.getSymTbl();
-        Value val = exp.eval(symTbl);
+        IHeap hp = state.getHeap();
+        Value val = exp.eval(symTbl, hp);
         if(!val.getType().equals(new StringType())) {
             throw new MyException("The type of the evaluated expression is not of StringType!");
         }

@@ -26,7 +26,7 @@ public class FileTable implements IFileTable {
 
     @Override
     public String toString(){
-        return dictionary.toString();
+        return "FileTable: "+dictionary.toString();
     }
 
     @Override

@@ -1,5 +1,6 @@
 package Model.Expressions;
 
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.Types.IntType;
@@ -41,11 +42,11 @@ public class ArithExp implements Exp {
     }
 
 
-    public Value eval(ISymTable tbl) throws MyException {
+    public Value eval(ISymTable tbl, IHeap hp) throws MyException {
         Value v1, v2;
-        v1 = e1.eval(tbl);
+        v1 = e1.eval(tbl, hp);
         if (v1.getType().equals(new IntType())) {
-            v2 = e2.eval(tbl);
+            v2 = e2.eval(tbl, hp);
             if (v2.getType().equals(new IntType())) {
                 IntValue i1 = (IntValue) v1;
                 IntValue i2 = (IntValue) v2;

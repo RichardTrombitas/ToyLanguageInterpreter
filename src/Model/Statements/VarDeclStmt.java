@@ -2,9 +2,7 @@ package Model.Statements;
 import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.PrgState;
-import Model.Types.BoolType;
-import Model.Types.IntType;
-import Model.Types.Type;
+import Model.Types.*;
 
 public class VarDeclStmt implements IStmt {
     private String name;
@@ -22,7 +20,7 @@ public class VarDeclStmt implements IStmt {
 
         ISymTable symTable = state.getSymTbl();
         if(symTable.isDefined(name)) {
-            throw new MyException("variable is already declared");
+            throw new MyException("Variable is already declared!");
         }
         else {
             if(typ instanceof BoolType)
@@ -32,6 +30,15 @@ public class VarDeclStmt implements IStmt {
             if(typ instanceof IntType)
             {
                 symTable.update(name, new IntType().defaultValue());
+            }
+            if(typ instanceof RefType)
+            {
+                Type innerType = ((RefType) typ).getInner();
+                symTable.update(name, new RefType(innerType).defaultValue());
+            }
+            if(typ instanceof StringType)
+            {
+                symTable.update(name, new StringType().defaultValue());
             }
         }
     }

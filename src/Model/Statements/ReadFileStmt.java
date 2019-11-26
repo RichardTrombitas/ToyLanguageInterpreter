@@ -1,6 +1,7 @@
 package Model.Statements;
 
 import Model.CollectionInstances.IFileTable;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
@@ -32,6 +33,7 @@ public class ReadFileStmt implements IStmt{
     public void execute(PrgState state) throws MyException, IOException {
         ISymTable symTbl = state.getSymTbl();
         IFileTable ft = state.getFileTable();
+        IHeap hp = state.getHeap();
 
         if(!symTbl.isDefined(varName)) {
             throw new MyException("The variable is not defined in the symbol table!");
@@ -40,7 +42,7 @@ public class ReadFileStmt implements IStmt{
             throw new MyException("The variable is not of IntType!");
         }
 
-        Value val = exp.eval(symTbl);
+        Value val = exp.eval(symTbl, hp);
         if(!val.getType().equals(new StringType())) {
             throw new MyException("The type of the evaluated expression is not of StringType!");
         }

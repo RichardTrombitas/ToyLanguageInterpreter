@@ -21,7 +21,7 @@ public class ExeStack implements IExeStack {
 
     @Override
     public String toString(){
-        return stack.toString();
+        return "ExeStack: "+stack.toString();
     }
 
     public String toStringSpecial(){

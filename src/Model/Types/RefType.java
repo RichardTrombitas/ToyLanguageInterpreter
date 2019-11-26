@@ -7,7 +7,7 @@ public class RefType implements Type{
     private Type inner;
 
     public RefType(Type inner) {this.inner=inner;}
-    private Type getInner() {return inner;}
+    public Type getInner() {return inner;}
     public boolean equals(Object another){
         if (another instanceof RefType)
             return inner.equals(((RefType) another).getInner());

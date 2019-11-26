@@ -12,7 +12,7 @@ public class OutputList implements IOutputList {
 
     @Override
     public String toString(){
-        return list.toString();
+        return "Output: "+list.toString();
     }
 
     @Override

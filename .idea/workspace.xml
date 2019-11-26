@@ -2,12 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Expressions/ReadHeapExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/HeapAllocStmt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/WriteHeapStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/ArithExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/ArithExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/Exp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/Exp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/LogicExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/LogicExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/RelationalExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/RelationalExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/ValueExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/ValueExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Expressions/VarExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Expressions/VarExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/PrgState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/PrgState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/AssignStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/AssignStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/CloseRFileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/CloseRFileStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/IfStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/IfStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/OpenRFileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/OpenRFileStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/PrintStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/PrintStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/ReadFileStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/ReadFileStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Model/Statements/VarDeclStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Model/Statements/VarDeclStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/Repository/Repository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Repository/Repository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CollectionInstances/ExeStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CollectionInstances/ExeStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CollectionInstances/FileTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CollectionInstances/FileTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/CollectionInstances/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CollectionInstances/Heap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/CollectionInstances/IHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CollectionInstances/IHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Collections/MyDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Collections/MyDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CollectionInstances/OutputList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CollectionInstances/OutputList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/CollectionInstances/SymTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/CollectionInstances/SymTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ArithExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/Exp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/Exp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/RelationalExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/RelationalExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ValueExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ValueExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/VarExp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/OpenRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/OpenRFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Types/RefType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Types/RefType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Values/RefValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Values/RefValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

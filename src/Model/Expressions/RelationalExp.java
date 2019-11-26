@@ -1,5 +1,6 @@
 package Model.Expressions;
 
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.Types.IntType;
@@ -26,10 +27,10 @@ public class RelationalExp implements Exp {
     }
 
     @Override
-    public BoolValue eval(ISymTable tbl) throws MyException {
-        Value nr1 = e1.eval(tbl);
+    public BoolValue eval(ISymTable tbl, IHeap hp) throws MyException {
+        Value nr1 = e1.eval(tbl, hp);
         if(nr1.getType().equals(new IntType())){
-            Value nr2 = e2.eval(tbl);
+            Value nr2 = e2.eval(tbl, hp);
             if(nr2.getType().equals(new IntType())){
                 IntValue b1 = (IntValue) nr1;
                 IntValue b2 = (IntValue) nr2;

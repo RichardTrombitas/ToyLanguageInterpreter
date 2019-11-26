@@ -22,7 +22,7 @@ public class SymTable implements ISymTable {
 
     @Override
     public String toString(){
-        return dictionary.toString();
+        return "SymTable: "+dictionary.toString();
     }
 
     public String toStringSpecial() {

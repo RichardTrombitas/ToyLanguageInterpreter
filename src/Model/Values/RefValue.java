@@ -18,6 +18,12 @@ public class RefValue implements Value{
     }
 
     public int getAddr() {return address;}
-    public Type getType() { return new RefType(locationType);}
+
+    @Override
+    public String toString(){
+        return "("+Integer.toString(address)+","+locationType.toString()+")";
+    }
+
+    public Type getType() {return new RefType(locationType);}
 }
 

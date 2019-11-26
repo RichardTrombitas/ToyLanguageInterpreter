@@ -1,4 +1,5 @@
 package Model.Statements;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.IOutputList;
 import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
@@ -19,8 +20,9 @@ public class PrintStmt implements IStmt {
 
         IOutputList out = state.getOutList();
         ISymTable symTable = state.getSymTbl();
+        IHeap hp = state.getHeap();
 
-        out.add(exp.eval(symTable));
+        out.add(exp.eval(symTable, hp));
     }
   
 }

@@ -1,4 +1,5 @@
 package Model.Expressions;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.Values.Value;
 
@@ -15,7 +16,7 @@ public class VarExp implements Exp {
     }
 
     @Override
-    public Value eval(ISymTable tbl) {
+    public Value eval(ISymTable tbl, IHeap hp) {
         return tbl.lookup(id);
     }
 }

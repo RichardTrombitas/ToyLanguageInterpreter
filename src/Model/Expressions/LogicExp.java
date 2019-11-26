@@ -1,4 +1,5 @@
 package Model.Expressions;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.Types.BoolType;
@@ -31,10 +32,10 @@ public class LogicExp implements Exp {
     }
 
     @Override
-    public Value eval(ISymTable tbl) throws MyException {
-        Value nr1 = e1.eval(tbl);
+    public Value eval(ISymTable tbl, IHeap hp) throws MyException {
+        Value nr1 = e1.eval(tbl, hp);
         if(nr1.getType().equals(new BoolType())){
-            Value nr2 = e2.eval(tbl);
+            Value nr2 = e2.eval(tbl, hp);
             if(nr2.getType().equals(new BoolType())){
                 BoolValue b1 = (BoolValue) nr1;
                 BoolValue b2 = (BoolValue) nr2;

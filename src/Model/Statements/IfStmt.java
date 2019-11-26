@@ -1,5 +1,6 @@
 package Model.Statements;
 import Model.CollectionInstances.IExeStack;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
@@ -27,8 +28,9 @@ public class IfStmt implements IStmt {
     public void execute(PrgState state) throws MyException {
         IExeStack stk = state.getStk();
         ISymTable symTable = state.getSymTbl();
+        IHeap hp = state.getHeap();
 
-        Value cond = exp.eval(symTable);
+        Value cond = exp.eval(symTable, hp);
 
         if(!cond.getType().equals(new BoolType())){
             throw new MyException("conditional expression is not a boolean");

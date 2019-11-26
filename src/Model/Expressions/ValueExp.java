@@ -1,4 +1,5 @@
 package Model.Expressions;
+import Model.CollectionInstances.IHeap;
 import Model.CollectionInstances.ISymTable;
 import Model.Values.Value;
 public class ValueExp implements Exp {
@@ -14,7 +15,7 @@ public class ValueExp implements Exp {
     }
 
     @Override
-    public Value eval(ISymTable symTable){
+    public Value eval(ISymTable symTable, IHeap hp){
         return e;
     }
 
