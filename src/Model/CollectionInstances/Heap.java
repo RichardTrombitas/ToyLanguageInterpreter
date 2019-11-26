@@ -1,39 +1,35 @@
 package Model.CollectionInstances;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import Model.Collections.MyDictionary;
+import Model.Values.Value;
 
-public class Heap<K, V> implements IHeap<K, V> {
-    private Map<K, V> map = new HashMap<>();
+public class Heap implements IHeap {
+    private MyDictionary<Integer, Value> dictionary = new MyDictionary<>();
+    private int freeLocation = 0;
 
-    public boolean isDefined(K id) {
-        return map.containsKey(id);
+    public void allocate(Value val){
+        dictionary.update(++freeLocation, val);
     }
 
-    public V lookup(K id) {
-        return map.get(id);
+    public void deallocate(Integer addr){
+        dictionary.delete(addr);
     }
 
-    public void update(K id, V val) {
-        map.put(id, val);
+    public Value lookup(Integer addr) {
+        return dictionary.lookup(addr);
     }
 
-    public void delete(K id) {map.remove(id);}
+    public void update(Integer addr, Value val) {
+        dictionary.update(addr, val);
+    }
 
     @Override
     public String toString(){
-        return map.toString();
+        return dictionary.toString();
     }
 
     public String toStringSpecial() {
-        StringBuilder res = new StringBuilder();
-        Iterator mapIterator = map.entrySet().iterator();
-        for (Map.Entry mapElement : map.entrySet()) {
-            res.append(mapElement.getKey()).append(" --> ");
-            res.append(mapElement.getValue()).append("\n");
-        }
-        return res.toString();
+        return dictionary.toStringSpecial();
     }
 
 }

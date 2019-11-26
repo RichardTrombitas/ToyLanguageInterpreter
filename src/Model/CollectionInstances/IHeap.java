@@ -1,9 +1,11 @@
 package Model.CollectionInstances;
 
-public interface IHeap<K, V> {
-    boolean isDefined(K id);
-    V lookup(K id);
-    void update(K id, V val);
-    void delete(K id);
+import Model.Values.Value;
+
+public interface IHeap {
+    void allocate(Value val);
+    void deallocate(Integer addr);
+    Value lookup(Integer addr);
+    void update(Integer addr, Value val);
     String toStringSpecial();
 }

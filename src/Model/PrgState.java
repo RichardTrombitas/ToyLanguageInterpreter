@@ -9,16 +9,19 @@ public class PrgState {
     private ISymTable symTable;
     private IOutputList out;
     private IFileTable fileTable;
+    private IHeap heap;
 
     //private IStmt originalProgram; //optional field, but good to have
 
-    public PrgState(IExeStack stk, ISymTable symtbl, IOutputList ot, IStmt prg, IFileTable ft) {
+    public PrgState(IExeStack stk, ISymTable symtbl, IOutputList ot, IStmt prg, IFileTable ft, IHeap hp) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
-        fileTable = ft;
-        //originalProgram = deepCopy(prg);    //recreate the entire original prg
         stk.push(prg);
+        fileTable = ft;
+        heap = hp;
+
+        //originalProgram = deepCopy(prg);    //recreate the entire original prg
     }
 
     public IExeStack getStk() {
@@ -39,8 +42,11 @@ public class PrgState {
     }
 
     public IFileTable getFileTable() {return fileTable;}
-    public void setFileTable(IFileTable ft) {
-        fileTable = ft;
+    public void setFileTable(IFileTable ft) { fileTable = ft; }
+
+    public IHeap getHeap() {return heap;}
+    public void setHeap(IHeap hp) {
+        heap = hp;
     }
 
     @Override
