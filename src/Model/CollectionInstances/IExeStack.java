@@ -1,8 +1,10 @@
 package Model.CollectionInstances;
 
-public interface IExeStack<T>{
-    T pop();
-    void push(T v);
+import Model.Statements.IStmt;
+
+public interface IExeStack{
+    IStmt pop();
+    void push(IStmt s);
     boolean isEmpty();
     String toStringSpecial();
 }

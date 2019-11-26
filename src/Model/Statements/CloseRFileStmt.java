@@ -1,6 +1,7 @@
 package Model.Statements;
 
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.IFileTable;
+import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
@@ -25,8 +26,8 @@ public class CloseRFileStmt implements IStmt {
 
     @Override
     public void execute(PrgState state) throws MyException, IOException {
-        MyIDictionary<StringValue, BufferedReader> ft = state.getFileTable();
-        MyIDictionary<String, Value> symTbl = state.getTbl();
+        IFileTable ft = state.getFileTable();
+        ISymTable symTbl = state.getSymTbl();
         Value val = exp.eval(symTbl);
         if(!val.getType().equals(new StringType())) {
             throw new MyException("The type of the evaluated expression is not of StringType!");

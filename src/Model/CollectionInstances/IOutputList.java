@@ -1,6 +1,8 @@
 package Model.CollectionInstances;
 
-public interface IOutputList<T> {
-    void add(T elem);
+import Model.Values.Value;
+
+public interface IOutputList {
+    void add(Value elem);
     String toStringSpecial();
 }

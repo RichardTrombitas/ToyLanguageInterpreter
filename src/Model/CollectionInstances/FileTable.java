@@ -1,39 +1,37 @@
 package Model.CollectionInstances;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import Model.Collections.MyDictionary;
+import Model.Values.StringValue;
 
-public class FileTable<K, V> implements IFileTable<K, V> {
-    private Map<K, V> map = new HashMap<>();
+import java.io.BufferedReader;
 
-    public boolean isDefined(K id) {
-        return map.containsKey(id);
+public class FileTable implements IFileTable {
+    private MyDictionary<StringValue, BufferedReader> dictionary = new MyDictionary<>();
+
+    public boolean isDefined(StringValue id) {
+        return dictionary.isDefined(id);
     }
 
-    public V lookup(K id) {
-        return map.get(id);
+    public BufferedReader lookup(StringValue id) {
+        return dictionary.lookup(id);
     }
 
-    public void update(K id, V val) {
-        map.put(id, val);
+    public void update(StringValue id, BufferedReader val) {
+        dictionary.update(id, val);
     }
 
-    public void delete(K id) {map.remove(id);}
+    public void delete(StringValue id) {
+        dictionary.delete(id);
+    }
 
     @Override
     public String toString(){
-        return map.toString();
+        return dictionary.toString();
     }
 
+    @Override
     public String toStringSpecial() {
-        StringBuilder res = new StringBuilder();
-        Iterator mapIterator = map.entrySet().iterator();
-        for (Map.Entry mapElement : map.entrySet()) {
-            res.append(mapElement.getKey()).append(" --> ");
-            res.append(mapElement.getValue()).append("\n");
-        }
-        return res.toString();
+        return dictionary.toStringSpecial();
     }
 
 }

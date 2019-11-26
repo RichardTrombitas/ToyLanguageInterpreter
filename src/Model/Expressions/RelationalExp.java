@@ -1,6 +1,6 @@
 package Model.Expressions;
 
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.Types.IntType;
 import Model.Values.BoolValue;
@@ -26,7 +26,7 @@ public class RelationalExp implements Exp {
     }
 
     @Override
-    public BoolValue eval(MyIDictionary<String, Value> tbl) throws MyException {
+    public BoolValue eval(ISymTable tbl) throws MyException {
         Value nr1 = e1.eval(tbl);
         if(nr1.getType().equals(new IntType())){
             Value nr2 = e2.eval(tbl);

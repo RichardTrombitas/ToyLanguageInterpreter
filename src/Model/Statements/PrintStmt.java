@@ -1,10 +1,9 @@
 package Model.Statements;
-import Model.Collections.MyIDictionary;
-import Model.Collections.MyIList;
+import Model.CollectionInstances.IOutputList;
+import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
-import Model.Values.Value;
 
 public class PrintStmt implements IStmt {
     private Exp exp;
@@ -18,8 +17,8 @@ public class PrintStmt implements IStmt {
 
     public void execute(PrgState state) throws MyException {
 
-        MyIList<Value> out = state.getOutList();
-        MyIDictionary<String, Value> symTable = state.getTbl();
+        IOutputList out = state.getOutList();
+        ISymTable symTable = state.getSymTbl();
 
         out.add(exp.eval(symTable));
     }

@@ -1,39 +1,32 @@
 package Model.CollectionInstances;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import Model.Collections.MyDictionary;
+import Model.Values.Value;
 
-public class SymTable<K, V> implements ISymTable<K, V> {
-    private Map<K, V> map = new HashMap<>();
+public class SymTable implements ISymTable {
+    private MyDictionary<String, Value> dictionary = new MyDictionary<>();
 
-    public boolean isDefined(K id) {
-        return map.containsKey(id);
+    public boolean isDefined(String id) {
+        return dictionary.isDefined(id);
     }
 
-    public V lookup(K id) {
-        return map.get(id);
+    public Value lookup(String id) {
+        return dictionary.lookup(id);
     }
 
-    public void update(K id, V val) {
-        map.put(id, val);
+    public void update(String id, Value val) {
+        dictionary.update(id, val);
     }
 
-    public void delete(K id) {map.remove(id);}
+    public void delete(String id) {dictionary.delete(id);}
 
     @Override
     public String toString(){
-        return map.toString();
+        return dictionary.toString();
     }
 
     public String toStringSpecial() {
-        StringBuilder res = new StringBuilder();
-        Iterator mapIterator = map.entrySet().iterator();
-        for (Map.Entry mapElement : map.entrySet()) {
-            res.append(mapElement.getKey()).append(" --> ");
-            res.append(mapElement.getValue()).append("\n");
-        }
-        return res.toString();
+        return dictionary.toStringSpecial();
     }
 
 }

@@ -33,7 +33,7 @@ public class Repository implements IRepository{
         logFile.write("ExeStack:\n");
         logFile.write(prgState.getStk().toStringSpecial()+"\n");
         logFile.write("SymTable:\n");
-        logFile.write(prgState.getTbl().toStringSpecial()+"\n");
+        logFile.write(prgState.getSymTbl().toStringSpecial()+"\n");
         logFile.write("Out:\n");
         logFile.write(prgState.getOutList().toStringSpecial()+"\n");
         logFile.write("FileTable:\n");

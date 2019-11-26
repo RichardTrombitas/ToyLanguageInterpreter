@@ -1,6 +1,7 @@
 package Model.Statements;
 
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.IFileTable;
+import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
@@ -29,8 +30,8 @@ public class ReadFileStmt implements IStmt{
 
     @Override
     public void execute(PrgState state) throws MyException, IOException {
-        MyIDictionary<String, Value> symTbl = state.getTbl();
-        MyIDictionary<StringValue, BufferedReader> ft = state.getFileTable();
+        ISymTable symTbl = state.getSymTbl();
+        IFileTable ft = state.getFileTable();
 
         if(!symTbl.isDefined(varName)) {
             throw new MyException("The variable is not defined in the symbol table!");

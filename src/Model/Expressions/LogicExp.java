@@ -1,9 +1,10 @@
 package Model.Expressions;
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.Types.BoolType;
 import Model.Values.BoolValue;
 import Model.Values.Value;
+
 public class LogicExp implements Exp {
     private Exp e1;
     private Exp e2;
@@ -30,7 +31,7 @@ public class LogicExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
+    public Value eval(ISymTable tbl) throws MyException {
         Value nr1 = e1.eval(tbl);
         if(nr1.getType().equals(new BoolType())){
             Value nr2 = e2.eval(tbl);

@@ -1,6 +1,6 @@
 package Model.Statements;
 
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
@@ -22,7 +22,7 @@ public class AssignStmt implements IStmt {
     }
 
     public void execute(PrgState state) throws MyException {
-        MyIDictionary<String, Value> symTbl = state.getTbl();
+        ISymTable symTbl = state.getSymTbl();
         Value val = exp.eval(symTbl);
         if (symTbl.isDefined(id)) {
             Type typId = (symTbl.lookup(id)).getType();

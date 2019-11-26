@@ -1,6 +1,6 @@
 package Model.Statements;
-import Model.Collections.MyIDictionary;
-import Model.Collections.MyIStack;
+import Model.CollectionInstances.IExeStack;
+import Model.CollectionInstances.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
@@ -25,8 +25,8 @@ public class IfStmt implements IStmt {
     }
 
     public void execute(PrgState state) throws MyException {
-        MyIStack<IStmt> stk = state.getStk();
-        MyIDictionary<String, Value> symTable = state.getTbl();
+        IExeStack stk = state.getStk();
+        ISymTable symTable = state.getSymTbl();
 
         Value cond = exp.eval(symTable);
 

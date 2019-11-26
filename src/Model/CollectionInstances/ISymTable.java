@@ -1,9 +1,11 @@
 package Model.CollectionInstances;
 
-public interface ISymTable<K, V> {
-    boolean isDefined(K id);
-    V lookup(K id);
-    void update(K id, V val);
-    void delete(K id);
+import Model.Values.Value;
+
+public interface ISymTable {
+    boolean isDefined(String id);
+    Value lookup(String id);
+    void update(String id, Value val);
+    void delete(String id);
     String toStringSpecial();
 }

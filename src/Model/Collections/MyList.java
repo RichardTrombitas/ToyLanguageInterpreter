@@ -23,6 +23,7 @@ public class MyList<T> implements MyIList<T> {
         return list.toString();
     }
 
+    @Override
     public String toStringSpecial() {
         StringBuilder res = new StringBuilder();
         for(T el : list){

@@ -1,5 +1,5 @@
 package Model.Expressions;
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.ISymTable;
 import Model.Values.Value;
 public class ValueExp implements Exp {
     private Value e;
@@ -14,7 +14,7 @@ public class ValueExp implements Exp {
     }
 
     @Override
-    public Value eval(MyIDictionary<String, Value> tbl){
+    public Value eval(ISymTable symTable){
         return e;
     }
 

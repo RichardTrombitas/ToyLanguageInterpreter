@@ -1,6 +1,6 @@
 package Model.Expressions;
 
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.Types.IntType;
 import Model.Values.IntValue;
@@ -41,7 +41,7 @@ public class ArithExp implements Exp {
     }
 
 
-    public Value eval(MyIDictionary<String, Value> tbl) throws MyException {
+    public Value eval(ISymTable tbl) throws MyException {
         Value v1, v2;
         v1 = e1.eval(tbl);
         if (v1.getType().equals(new IntType())) {

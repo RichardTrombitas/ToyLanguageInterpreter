@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.Collections.MyIStack;
+import Model.CollectionInstances.IExeStack;
 import Model.MyException;
 import Model.PrgState;
 import Model.Statements.IStmt;
@@ -18,7 +18,7 @@ public class Controller {
     }
 
     private void oneStep(PrgState state) throws MyException, IOException {
-        MyIStack<IStmt> stk=state.getStk();
+        IExeStack stk=state.getStk();
         if(stk.isEmpty()) throw new MyException("prgstate stack is empty");
         IStmt crtStmt = stk.pop();
         crtStmt.execute(state);

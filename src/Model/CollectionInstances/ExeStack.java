@@ -1,16 +1,17 @@
 package Model.CollectionInstances;
 
-import java.util.ListIterator;
-import java.util.Stack;
+import Model.Collections.MyStack;
+import Model.Statements.IStmt;
 
-public class ExeStack<T> implements IExeStack<T> {
-    private Stack<T> stack = new Stack<>();
 
-    public T pop(){
+public class ExeStack implements IExeStack {
+    private MyStack<IStmt> stack = new MyStack<>();
+
+    public IStmt pop(){
         return stack.pop();
     }
 
-    public void push(T elem){
+    public void push(IStmt elem){
         stack.push(elem);
     }
 
@@ -24,11 +25,6 @@ public class ExeStack<T> implements IExeStack<T> {
     }
 
     public String toStringSpecial(){
-        StringBuilder res = new StringBuilder();
-        ListIterator li = stack.listIterator(stack.size());
-        while (li.hasPrevious()) {
-            res.append(li.previous()).append('\n');
-        }
-        return res.toString();
+        return stack.toStringSpecial();
     }
 }

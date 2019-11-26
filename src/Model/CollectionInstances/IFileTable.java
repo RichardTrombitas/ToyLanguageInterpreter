@@ -1,9 +1,12 @@
 package Model.CollectionInstances;
 
-public interface IFileTable<K, V> {
-    boolean isDefined(K id);
-    V lookup(K id);
-    void update(K id, V val);
-    void delete(K id);
+import Model.Values.StringValue;
+
+import java.io.BufferedReader;
+public interface IFileTable {
+    boolean isDefined(StringValue id);
+    BufferedReader lookup(StringValue id);
+    void update(StringValue id, BufferedReader val);
+    void delete(StringValue id);
     String toStringSpecial();
 }

@@ -1,21 +1,13 @@
 package Model.CollectionInstances;
 
-import java.util.ArrayList;
-import java.util.List;
+import Model.Collections.MyList;
+import Model.Values.Value;
 
-public class OutputList<T> implements IOutputList<T> {
-    private List<T> list  = new ArrayList<>();
+public class OutputList implements IOutputList {
+    private MyList<Value> list  = new MyList<>();
 
-    public void add(T elem){
+    public void add(Value elem){
         list.add(elem);
-    }
-
-    public T getFromIdx(int i){
-        return list.get(i);
-    }
-
-    public void setAtIdx(int i, T elem){
-        list.set(i, elem);
     }
 
     @Override
@@ -23,11 +15,8 @@ public class OutputList<T> implements IOutputList<T> {
         return list.toString();
     }
 
-    public String toStringSpecial() {
-        StringBuilder res = new StringBuilder();
-        for(T el : list){
-            res.append(el.toString()).append("\n");
-        }
-        return res.toString();
-    }
+    @Override
+    public String toStringSpecial() { return list.toStringSpecial(); }
+
 }
+

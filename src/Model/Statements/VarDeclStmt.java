@@ -1,11 +1,10 @@
 package Model.Statements;
-import Model.Collections.MyIDictionary;
+import Model.CollectionInstances.ISymTable;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Types.Type;
-import Model.Values.Value;
 
 public class VarDeclStmt implements IStmt {
     private String name;
@@ -21,7 +20,7 @@ public class VarDeclStmt implements IStmt {
 
     public void execute(PrgState state) throws MyException {
 
-        MyIDictionary<String, Value> symTable = state.getTbl();
+        ISymTable symTable = state.getSymTbl();
         if(symTable.isDefined(name)) {
             throw new MyException("variable is already declared");
         }
@@ -36,6 +35,4 @@ public class VarDeclStmt implements IStmt {
             }
         }
     }
-
-
 }

@@ -1,6 +1,6 @@
 package Model.Statements;
 
-import Model.Collections.MyIStack;
+import Model.CollectionInstances.IExeStack;
 import Model.PrgState;
 
 public class CompStmt implements IStmt {
@@ -18,7 +18,7 @@ public class CompStmt implements IStmt {
     }
 
     public void execute(PrgState state){
-        MyIStack<IStmt> stk = state.getStk();
+        IExeStack stk = state.getStk();
         stk.push(snd);
         stk.push(first);
     }
