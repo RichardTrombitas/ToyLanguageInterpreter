@@ -1,5 +1,5 @@
 package Model.Statements;
-import Model.DataStructures.MyIDictionary;
+import Model.Collections.MyIDictionary;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.BoolType;

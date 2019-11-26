@@ -1,0 +1,120 @@
+ExeStack:
+(boolean a;(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))))
+
+SymTable:
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+boolean a
+(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v))))
+
+SymTable:
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v))))
+
+SymTable:
+a --> false
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+int v
+(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))
+
+SymTable:
+a --> false
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))
+
+SymTable:
+a --> false
+v --> 0
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+a=true
+(IF(a) THEN (v=2) ELSE (v=3);print(v))
+
+SymTable:
+a --> false
+v --> 0
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+(IF(a) THEN (v=2) ELSE (v=3);print(v))
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+IF(a) THEN (v=2) ELSE (v=3)
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+v=2
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+print(v)
+
+SymTable:
+a --> true
+v --> 2
+
+Out:
+
+FileTable:
+_______________________________
+ExeStack:
+
+SymTable:
+a --> true
+v --> 2
+
+Out:
+2
+
+FileTable:
+_______________________________

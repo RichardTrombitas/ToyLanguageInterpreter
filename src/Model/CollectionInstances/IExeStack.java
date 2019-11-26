@@ -1,6 +1,6 @@
-package Model.DataStructures;
+package Model.CollectionInstances;
 
-public interface MyIStack<T>{
+public interface IExeStack<T>{
     T pop();
     void push(T v);
     boolean isEmpty();

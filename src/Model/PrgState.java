@@ -1,8 +1,8 @@
 package Model;
 
-import Model.DataStructures.MyIDictionary;
-import Model.DataStructures.MyIList;
-import Model.DataStructures.MyIStack;
+import Model.Collections.MyIDictionary;
+import Model.Collections.MyIList;
+import Model.Collections.MyIStack;
 import Model.Statements.IStmt;
 import Model.Values.StringValue;
 import Model.Values.Value;
@@ -14,6 +14,7 @@ public class PrgState {
     private MyIDictionary<String, Value> symTable;
     private MyIList<Value> out;
     private MyIDictionary<StringValue, BufferedReader> fileTable;
+
     //private IStmt originalProgram; //optional field, but good to have
 
     public PrgState(MyIStack<IStmt> stk, MyIDictionary<String, Value> symtbl, MyIList<Value> ot, IStmt prg, MyIDictionary<StringValue, BufferedReader> ft) {

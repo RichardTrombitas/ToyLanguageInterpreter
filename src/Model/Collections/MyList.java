@@ -1,4 +1,4 @@
-package Model.DataStructures;
+package Model.Collections;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,6 @@ public class MyList<T> implements MyIList<T> {
     public void add(T elem){
         list.add(elem);
     }
-
 
     public T getFromIdx(int i){
         return list.get(i);

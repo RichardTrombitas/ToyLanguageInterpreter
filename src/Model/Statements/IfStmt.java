@@ -1,6 +1,6 @@
 package Model.Statements;
-import Model.DataStructures.MyIDictionary;
-import Model.DataStructures.MyIStack;
+import Model.Collections.MyIDictionary;
+import Model.Collections.MyIStack;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;

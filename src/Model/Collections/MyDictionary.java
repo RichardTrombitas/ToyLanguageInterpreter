@@ -1,4 +1,4 @@
-package Model.DataStructures;
+package Model.Collections;
 
 import java.util.HashMap;
 import java.util.Iterator;

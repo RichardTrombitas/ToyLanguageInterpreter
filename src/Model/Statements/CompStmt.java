@@ -1,6 +1,6 @@
 package Model.Statements;
 
-import Model.DataStructures.MyIStack;
+import Model.Collections.MyIStack;
 import Model.PrgState;
 
 public class CompStmt implements IStmt {

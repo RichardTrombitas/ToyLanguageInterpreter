@@ -1,6 +1,6 @@
 package Controller;
 
-import Model.DataStructures.MyIStack;
+import Model.Collections.MyIStack;
 import Model.MyException;
 import Model.PrgState;
 import Model.Statements.IStmt;

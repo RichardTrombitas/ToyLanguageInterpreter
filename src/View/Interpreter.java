@@ -2,7 +2,7 @@ package View;
 
 import Controller.Controller;
 import Model.*;
-import Model.DataStructures.*;
+import Model.Collections.*;
 import Model.Expressions.ArithExp;
 import Model.Expressions.ValueExp;
 import Model.Expressions.VarExp;
@@ -101,7 +101,7 @@ public class Interpreter {
 //        System.out.println("v="+prg1.getTbl().lookup("v"));
 //
 //        CloseRFileStmt c = new CloseRFileStmt(varf);
-        
+
 
     }
 }

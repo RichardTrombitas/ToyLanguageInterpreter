@@ -1,6 +1,6 @@
-package Model.DataStructures;
+package Model.CollectionInstances;
 
-public interface MyIDictionary<K, V> {
+public interface ISymTable<K, V> {
     boolean isDefined(K id);
     V lookup(K id);
     void update(K id, V val);
