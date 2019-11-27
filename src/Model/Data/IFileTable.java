@@ -1,4 +1,4 @@
-package Model.CollectionInstances;
+package Model.Data;
 
 import Model.Values.StringValue;
 

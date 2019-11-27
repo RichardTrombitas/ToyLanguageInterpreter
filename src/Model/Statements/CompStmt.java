@@ -1,6 +1,6 @@
 package Model.Statements;
 
-import Model.CollectionInstances.IExeStack;
+import Model.Data.IExeStack;
 import Model.PrgState;
 
 public class CompStmt implements IStmt {

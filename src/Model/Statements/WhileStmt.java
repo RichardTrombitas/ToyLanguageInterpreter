@@ -1,6 +1,6 @@
 package Model.Statements;
 
-import Model.CollectionInstances.*;
+import Model.Data.*;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;

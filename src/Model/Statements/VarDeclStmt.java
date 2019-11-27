@@ -1,5 +1,5 @@
 package Model.Statements;
-import Model.CollectionInstances.ISymTable;
+import Model.Data.ISymTable;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.*;

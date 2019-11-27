@@ -1,8 +1,7 @@
 package Model.Expressions;
 
-import Model.CollectionInstances.Heap;
-import Model.CollectionInstances.IHeap;
-import Model.CollectionInstances.ISymTable;
+import Model.Data.IHeap;
+import Model.Data.ISymTable;
 import Model.MyException;
 import Model.Types.RefType;
 import Model.Values.RefValue;

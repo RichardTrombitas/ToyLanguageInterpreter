@@ -1,7 +1,7 @@
 package Model.Statements;
 
-import Model.CollectionInstances.IHeap;
-import Model.CollectionInstances.ISymTable;
+import Model.Data.IHeap;
+import Model.Data.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;

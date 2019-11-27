@@ -1,6 +1,6 @@
 package Model;
 
-import Model.CollectionInstances.*;
+import Model.Data.*;
 import Model.Statements.IStmt;
 
 

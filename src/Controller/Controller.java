@@ -1,7 +1,7 @@
 package Controller;
 
-import Model.CollectionInstances.IExeStack;
-import Model.CollectionInstances.IHeap;
+import Model.Data.IExeStack;
+import Model.Data.IHeap;
 import Model.MyException;
 import Model.PrgState;
 import Model.Statements.IStmt;

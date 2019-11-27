@@ -2,7 +2,7 @@ package View;
 
 import Controller.Controller;
 import Model.*;
-import Model.CollectionInstances.*;
+import Model.Data.*;
 import Model.Expressions.*;
 import Model.Statements.*;
 import Model.Types.BoolType;
@@ -10,10 +10,8 @@ import Model.Types.IntType;
 import Model.Types.RefType;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
-import Model.Values.StringValue;
 import Repository.IRepository;
 import Repository.Repository;
-import javafx.beans.binding.StringExpression;
 
 import java.io.IOException;
 

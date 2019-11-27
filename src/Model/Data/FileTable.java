@@ -1,36 +1,33 @@
-package Model.Collections;
+package Model.Data;
 
+import Model.Values.StringValue;
+
+import java.io.BufferedReader;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyDictionary<K, V> implements MyIDictionary<K, V> {
-    private Map<K, V> map = new HashMap<>();
+public class FileTable implements IFileTable {
+    private Map<StringValue, BufferedReader> map = new HashMap<>();
 
-    public boolean isDefined(K id) {
+    public boolean isDefined(StringValue id) {
         return map.containsKey(id);
     }
 
-    public V lookup(K id) {
+    public BufferedReader lookup(StringValue id) {
         return map.get(id);
     }
 
-    public void update(K id, V val) {
+    public void update(StringValue id, BufferedReader val) {
         map.put(id, val);
     }
 
-    public void delete(K id) {map.remove(id);}
-
-    public Map<K, V> getContent(){
-        return map;
-    }
-
-    public void setContent(Map<K,V> map){
-        this.map = map;
+    public void delete(StringValue id) {
+        map.remove(id);
     }
 
     @Override
     public String toString(){
-        return map.toString();
+        return "FileTable: "+map.toString();
     }
 
     public String toStringSpecial() {

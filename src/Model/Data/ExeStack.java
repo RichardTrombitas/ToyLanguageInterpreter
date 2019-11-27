@@ -1,16 +1,19 @@
-package Model.Collections;
+package Model.Data;
+
+import Model.Statements.IStmt;
 
 import java.util.ListIterator;
 import java.util.Stack;
 
-public class MyStack<T> implements MyIStack<T> {
-    private Stack<T> stack = new Stack<>();
 
-    public T pop(){
+public class ExeStack implements IExeStack {
+    private Stack<IStmt> stack = new Stack<>();
+
+    public IStmt pop(){
         return stack.pop();
     }
 
-    public void push(T elem){
+    public void push(IStmt elem){
         stack.push(elem);
     }
 
@@ -20,7 +23,7 @@ public class MyStack<T> implements MyIStack<T> {
 
     @Override
     public String toString(){
-        return stack.toString();
+        return "ExeStack: "+stack.toString();
     }
 
     public String toStringSpecial(){
