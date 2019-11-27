@@ -3,10 +3,7 @@ package View;
 import Controller.Controller;
 import Model.*;
 import Model.CollectionInstances.*;
-import Model.Expressions.ArithExp;
-import Model.Expressions.ReadHeapExp;
-import Model.Expressions.ValueExp;
-import Model.Expressions.VarExp;
+import Model.Expressions.*;
 import Model.Statements.*;
 import Model.Types.BoolType;
 import Model.Types.IntType;
@@ -154,20 +151,33 @@ public class Interpreter {
                                 new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
                                         new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(30))),
                                                 new PrintStmt(new ReadHeapExp(new ReadHeapExp(new VarExp("a")))))))));
-        //Ref int v;
-        //new(v,20);
-        //Ref Ref int a;
-        //new(a,v);
-        //print(rH(v));
-        //print(rH(rH(a))+5);
         SymTable symtbl7 = new SymTable();
         OutputList out7 = new OutputList();
         ExeStack stk7 = new ExeStack();
         FileTable ft7 = new FileTable();
         Heap hp7 = new Heap();
         PrgState prg7 = new PrgState(stk7, symtbl7, out7, ex7, ft7, hp7);
-        IRepository repo7 = new Repository(prg7,"log6.txt");
+        IRepository repo7 = new Repository(prg7,"log7.txt");
         Controller ctr7 = new Controller(repo7, true);
+
+        //int v;
+        //v=4;
+        //(while (v>0) print(v);v=v-1);
+        //print(v);
+        IStmt ex8 = new CompStmt(new VarDeclStmt("v", new IntType()),
+                      new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(4))),
+                          new CompStmt(new WhileStmt(new RelationalExp(new VarExp("v"), new ValueExp(new IntValue(0)),">"),
+                                        new CompStmt(new PrintStmt(new VarExp("v")),
+                                        new AssignStmt("v", new ArithExp(new VarExp("v"), new ValueExp(new IntValue(1)), 2)))),
+                                            new PrintStmt(new VarExp("v")))));
+        SymTable symtbl8 = new SymTable();
+        OutputList out8 = new OutputList();
+        ExeStack stk8 = new ExeStack();
+        FileTable ft8 = new FileTable();
+        Heap hp8 = new Heap();
+        PrgState prg8 = new PrgState(stk8, symtbl8, out8, ex8, ft8, hp8);
+        IRepository repo8 = new Repository(prg8,"log8.txt");
+        Controller ctr8 = new Controller(repo8, true);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -178,6 +188,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("5",ex5.toString(),ctr5));
         menu.addCommand(new RunExample("6",ex6.toString(),ctr6));
         menu.addCommand(new RunExample("7",ex7.toString(),ctr7));
+        menu.addCommand(new RunExample("8",ex8.toString(),ctr8));
         menu.show();
 
 //        ctr1.allStep();

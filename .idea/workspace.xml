@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/log2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/WhileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/A2/Controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/Controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A2/View/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A2/View/Interpreter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
