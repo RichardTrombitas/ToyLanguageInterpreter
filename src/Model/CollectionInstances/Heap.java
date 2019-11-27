@@ -1,8 +1,10 @@
 package Model.CollectionInstances;
 
 import Model.Collections.MyDictionary;
+import Model.Values.RefValue;
 import Model.Values.Value;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class Heap implements IHeap {
@@ -47,4 +49,14 @@ public class Heap implements IHeap {
         return dictionary.toStringSpecial();
     }
 
+    public Map<Integer, Value> getReachableValues(Integer initialAddr){
+        Map<Integer, Value> map = new HashMap<>();
+        Value val = dictionary.lookup(initialAddr);
+        while(val instanceof RefValue){
+            int addr = ((RefValue)val).getAddr();
+            val = dictionary.lookup(addr);
+            map.put(addr, val);
+        }
+        return map;
+    }
 }

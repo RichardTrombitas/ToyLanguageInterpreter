@@ -13,4 +13,5 @@ public interface IHeap {
     void setContent(Map<Integer, Value> map);
     boolean isDefined(Integer addr);
     String toStringSpecial();
+    Map<Integer, Value> getReachableValues(Integer initialAddr);
 }

@@ -1,6 +1,7 @@
 package Controller;
 
 import Model.CollectionInstances.IExeStack;
+import Model.CollectionInstances.IHeap;
 import Model.MyException;
 import Model.PrgState;
 import Model.Statements.IStmt;
@@ -10,6 +11,7 @@ import Repository.IRepository;
 
 import java.io.IOException;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -23,10 +25,15 @@ public class Controller {
         this.displayFlag = displayFlag;
     }
 
-    private Map<Integer, Value> unsafeGarbageCollector(List<Integer> symTableAddr, Map<Integer, Value> heap){
-        return heap.entrySet().stream()
+    private Map<Integer, Value> safeGarbageCollector(List<Integer> symTableAddr, IHeap heap){
+        Map<Integer, Value> map = heap.getContent().entrySet().stream()
                 .filter(e->symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+        Map<Integer, Value> newMap = new HashMap<>(map);
+        for (Map.Entry mapElement : map.entrySet()) {
+            newMap.putAll(heap.getReachableValues((Integer) mapElement.getKey()));
+        }
+        return newMap;
     }
     private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues){
         return symTableValues.stream()
@@ -51,9 +58,9 @@ public class Controller {
         while (!prg.getStk().isEmpty()){
             oneStep(prg);
 
-            prg.getHeap().setContent(unsafeGarbageCollector(
+            prg.getHeap().setContent(safeGarbageCollector(
                     getAddrFromSymTable(prg.getSymTbl().getContent().values()),
-                    prg.getHeap().getContent()));
+                    prg.getHeap()));
 
             if(displayFlag) System.out.println(prg.toString()+'\n');
             repo.logPrgStateExec();
