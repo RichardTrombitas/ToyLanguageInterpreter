@@ -25,7 +25,7 @@ public class Controller {
         this.displayFlag = displayFlag;
     }
 
-    private Map<Integer, Value> safeGarbageCollector(List<Integer> symTableAddr, IHeap heap){
+    private Map<Integer, Value> garbageCollector(List<Integer> symTableAddr, IHeap heap){
         Map<Integer, Value> map = heap.getContent().entrySet().stream()
                 .filter(e->symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
@@ -58,7 +58,7 @@ public class Controller {
         while (!prg.getStk().isEmpty()){
             oneStep(prg);
 
-            prg.getHeap().setContent(safeGarbageCollector(
+            prg.getHeap().setContent(garbageCollector(
                     getAddrFromSymTable(prg.getSymTbl().getContent().values()),
                     prg.getHeap()));
 
