@@ -50,12 +50,12 @@ public class Controller {
 
         while (!prg.getStk().isEmpty()){
             oneStep(prg);
-            if(displayFlag) System.out.println(prg.toString()+'\n');
-            repo.logPrgStateExec();
+
             prg.getHeap().setContent(unsafeGarbageCollector(
                     getAddrFromSymTable(prg.getSymTbl().getContent().values()),
                     prg.getHeap().getContent()));
 
+            if(displayFlag) System.out.println(prg.toString()+'\n');
             repo.logPrgStateExec();
         }
     }
