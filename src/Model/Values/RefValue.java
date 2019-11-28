@@ -3,11 +3,11 @@ package Model.Values;
 import Model.Types.RefType;
 import Model.Types.Type;
 
-public class RefValue implements Value{
+public class RefValue implements Value {
     private int address;
     private Type locationType;
 
-    public RefValue(int address, Type locationType){
+    public RefValue(int address, Type locationType) {
         this.address = address;
         this.locationType = locationType;
     }
@@ -17,13 +17,17 @@ public class RefValue implements Value{
         return another.address == address && rt.equals(another.getType());
     }
 
-    public int getAddr() {return address;}
-
-    @Override
-    public String toString(){
-        return "("+Integer.toString(address)+","+locationType.toString()+")";
+    public int getAddr() {
+        return address;
     }
 
-    public Type getType() {return new RefType(locationType);}
+    @Override
+    public String toString() {
+        return "(" + address + "," + locationType.toString() + ")";
+    }
+
+    public Type getType() {
+        return new RefType(locationType);
+    }
 }
 

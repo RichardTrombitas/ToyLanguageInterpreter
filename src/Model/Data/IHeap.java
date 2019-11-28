@@ -1,7 +1,6 @@
 package Model.Data;
 
 import Model.Values.Value;
-
 import java.util.Map;
 
 public interface IHeap {
