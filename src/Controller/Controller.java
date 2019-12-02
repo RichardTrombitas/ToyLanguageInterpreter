@@ -42,13 +42,6 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    private void oneStep(PrgState state) throws MyException, IOException {
-        IExeStack stk=state.getStk();
-        if(stk.isEmpty()) throw new MyException("prgstate stack is empty");
-        IStmt crtStmt = stk.pop();
-        crtStmt.execute(state);
-    }
-
     public void allStep() throws MyException, IOException {
         PrgState prg = repo.getCrtPrg();
 

@@ -1,35 +1,35 @@
 package Repository;
-
-//import Model.DataStructures.MyList;
 import Model.PrgState;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repository implements IRepository{
 
-//    private MyList<PrgState> prgStates = new MyList<>();
-//    public Repository(PrgState s){
-//        prgStates.add(s);
-//    }
-//    public PrgState getCrtPrg() {
-//        return prgStates.getFromIdx(0);
-//    }
-
-    private PrgState prgState;
+    private List<PrgState> prgList;
     private String logFilePath;
-    public Repository(PrgState prgState, String logFilePath){
-        this.prgState = prgState;
+
+    public Repository(PrgState s, String logFilePath){
+        prgList = new ArrayList<>();
+        prgList.add(s);
         this.logFilePath = logFilePath;
     }
-    public PrgState getCrtPrg() {
-        return prgState;
+
+    public List<PrgState> getPrgList() {
+        return prgList;
     }
 
-    public void logPrgStateExec() throws IOException {
+    public void setPrgList(List<PrgState> list) {
+        prgList = list;
+    }
+
+    public void logPrgStateExec(PrgState prgState) throws IOException {
         PrintWriter logFile= new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+        logFile.write("PrgState id: "+prgState.getId()+"\n");
         logFile.write("ExeStack:\n");
         logFile.write(prgState.getStk().toStringSpecial()+"\n");
         logFile.write("SymTable:\n");

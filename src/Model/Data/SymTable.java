@@ -33,6 +33,20 @@ public class SymTable implements ISymTable {
     }
 
     @Override
+    public ISymTable deepCopy(){
+        ISymTable s = new SymTable();
+
+        Map<String, Value> mapCopy = new HashMap<>();
+        for (Map.Entry<String, Value> entry : map.entrySet())
+        {
+            mapCopy.put(entry.getKey(), entry.getValue());
+        }
+        s.setContent(mapCopy);
+
+        return s;
+    }
+
+    @Override
     public String toString(){
         return "SymTable: "+map.toString();
     }

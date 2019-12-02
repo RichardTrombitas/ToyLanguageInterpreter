@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Statements/ForkStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Data/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Data/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Data/IHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Data/IHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/ReadHeapExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/ReadHeapExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Data/ISymTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Data/ISymTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Data/SymTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Data/SymTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/PrgState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrgState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/AssignStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/HeapAllocStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/HeapAllocStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/IfStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/OpenRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/OpenRFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/VarDeclStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/WhileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/WhileStmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Statements/WriteHeapStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/WriteHeapStmt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Types/RefType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Types/RefType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/Values/RefValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Values/RefValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

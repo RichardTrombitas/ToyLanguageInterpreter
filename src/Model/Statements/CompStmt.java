@@ -17,9 +17,11 @@ public class CompStmt implements IStmt {
         return "("+first.toString() + ";" + snd.toString()+")";
     }
 
-    public void execute(PrgState state){
+    public PrgState execute(PrgState state){
         IExeStack stk = state.getStk();
         stk.push(snd);
         stk.push(first);
+
+        return null;
     }
 }

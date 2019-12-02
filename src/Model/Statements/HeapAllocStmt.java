@@ -23,7 +23,7 @@ public class HeapAllocStmt implements IStmt {
         return "new(" + varName + "," + exp.toString() + ")";
     }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         ISymTable symTbl = state.getSymTbl();
         IHeap hp = state.getHeap();
 
@@ -47,5 +47,7 @@ public class HeapAllocStmt implements IStmt {
         int addr = heap.allocate(value);
 
         symTbl.update(varName, new RefValue(addr, locationType));
+
+        return null;
     }
 }

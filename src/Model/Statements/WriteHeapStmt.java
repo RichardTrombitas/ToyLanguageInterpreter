@@ -24,7 +24,7 @@ public class WriteHeapStmt implements IStmt {
         return "wH(" + varName + "," + exp.toString() + ")";
     }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         IHeap hp = state.getHeap();
         ISymTable symTbl = state.getSymTbl();
         if (!symTbl.isDefined(varName)) {
@@ -47,6 +47,8 @@ public class WriteHeapStmt implements IStmt {
         }
 
         hp.update(addr, evalValue);
+
+        return null;
 
     }
 }

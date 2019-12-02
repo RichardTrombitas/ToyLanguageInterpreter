@@ -22,7 +22,7 @@ public class WhileStmt implements IStmt {
         return "while(" + exp.toString() + "){" + stmt.toString() + "}";
     }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         ISymTable symTbl = state.getSymTbl();
         IExeStack stack = state.getStk();
         IHeap hp = state.getHeap();
@@ -36,5 +36,7 @@ public class WhileStmt implements IStmt {
         } else {
             throw new MyException("Condition expression " + exp.toString() + " is not a boolean!");
         }
+
+        return null;
     }
 }

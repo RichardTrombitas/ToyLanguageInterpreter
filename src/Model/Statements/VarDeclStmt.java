@@ -16,7 +16,7 @@ public class VarDeclStmt implements IStmt {
     @Override
     public String toString(){ return typ + " " + name; }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
 
         ISymTable symTable = state.getSymTbl();
         if(symTable.isDefined(name)) {
@@ -41,5 +41,6 @@ public class VarDeclStmt implements IStmt {
                 symTable.update(name, new StringType().defaultValue());
             }
         }
+        return null;
     }
 }

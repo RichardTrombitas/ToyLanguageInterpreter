@@ -22,7 +22,7 @@ public class AssignStmt implements IStmt {
         return id + "=" + exp.toString();
     }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         ISymTable symTbl = state.getSymTbl();
         IHeap hp = state.getHeap();
         Value val = exp.eval(symTbl, hp);
@@ -36,6 +36,7 @@ public class AssignStmt implements IStmt {
         } else {
             throw new MyException("the used variable" + id + " was not declared before");
         }
+        return null;
     }
 }
 

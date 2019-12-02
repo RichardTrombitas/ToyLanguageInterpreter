@@ -25,7 +25,7 @@ public class IfStmt implements IStmt {
         return "IF(" + exp.toString() + ") THEN (" + thenS.toString() + ") ELSE (" + elseS.toString() + ")";
     }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
         IExeStack stk = state.getStk();
         ISymTable symTable = state.getSymTbl();
         IHeap hp = state.getHeap();
@@ -44,7 +44,7 @@ public class IfStmt implements IStmt {
                 stk.push(elseS);
             }
         }
-
+        return null;
     }
 }
 

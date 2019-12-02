@@ -30,7 +30,7 @@ public class ReadFileStmt implements IStmt{
     }
 
     @Override
-    public void execute(PrgState state) throws MyException, IOException {
+    public PrgState execute(PrgState state) throws MyException, IOException {
         ISymTable symTbl = state.getSymTbl();
         IFileTable ft = state.getFileTable();
         IHeap hp = state.getHeap();
@@ -61,6 +61,6 @@ public class ReadFileStmt implements IStmt{
         else {
             symTbl.update(varName, new IntValue(0));
         }
-
+        return null;
     }
 }

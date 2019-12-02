@@ -26,7 +26,7 @@ public class CloseRFileStmt implements IStmt {
     }
 
     @Override
-    public void execute(PrgState state) throws MyException, IOException {
+    public PrgState execute(PrgState state) throws MyException, IOException {
         IFileTable ft = state.getFileTable();
         ISymTable symTbl = state.getSymTbl();
         IHeap hp = state.getHeap();
@@ -43,6 +43,8 @@ public class CloseRFileStmt implements IStmt {
         br.close();
 
         ft.delete((StringValue) val);
+
+        return null;
     }
 }
 

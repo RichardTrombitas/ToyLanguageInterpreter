@@ -16,13 +16,15 @@ public class PrintStmt implements IStmt {
     @Override
     public String toString(){ return "print(" +exp.toString()+")"; }
 
-    public void execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException {
 
         IOutputList out = state.getOutList();
         ISymTable symTable = state.getSymTbl();
         IHeap hp = state.getHeap();
 
         out.add(exp.eval(symTable, hp));
+
+        return null;
     }
   
 }

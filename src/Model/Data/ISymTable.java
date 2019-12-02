@@ -11,5 +11,6 @@ public interface ISymTable {
     void delete(String id);
     Map<String, Value> getContent();
     void setContent(Map<String, Value> map);
+    ISymTable deepCopy();
     String toStringSpecial();
 }
