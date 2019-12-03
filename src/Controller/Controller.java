@@ -1,63 +1,107 @@
 package Controller;
 
-import Model.Data.IExeStack;
 import Model.Data.IHeap;
-import Model.MyException;
 import Model.PrgState;
-import Model.Statements.IStmt;
 import Model.Values.RefValue;
 import Model.Values.Value;
 import Repository.IRepository;
 
-import java.io.IOException;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class Controller {
     private IRepository repo;
-    private boolean displayFlag;
+    private ExecutorService executor;
 
-    public Controller(IRepository repo, boolean displayFlag){
+    public Controller(IRepository repo) {
         this.repo = repo;
-        this.displayFlag = displayFlag;
     }
 
-    private Map<Integer, Value> garbageCollector(List<Integer> symTableAddr, IHeap heap){
+    private Map<Integer, Value> garbageCollector(List<Integer> symTableAddr, IHeap heap) {
         Map<Integer, Value> map = heap.getContent().entrySet().stream()
-                .filter(e->symTableAddr.contains(e.getKey()))
+                .filter(e -> symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         Map<Integer, Value> newMap = new HashMap<>(map);
-        for (Map.Entry mapElement : map.entrySet()) {
-            newMap.putAll(heap.getReachableValues((Integer) mapElement.getKey()));
+        for (Map.Entry<Integer, Value> mapElement : map.entrySet()) {
+            newMap.putAll(heap.getReachableValues(mapElement.getKey()));
         }
         return newMap;
     }
-    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues){
+
+    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues) {
         return symTableValues.stream()
-                .filter(v-> v instanceof RefValue)
-                .map(v-> {RefValue v1 = (RefValue)v; return v1.getAddr();})
+                .filter(v -> v instanceof RefValue)
+                .map(v -> {
+                    RefValue v1 = (RefValue) v;
+                    return v1.getAddr();
+                })
                 .collect(Collectors.toList());
     }
 
-    public void allStep() throws MyException, IOException {
-        PrgState prg = repo.getCrtPrg();
+    void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException {
+        prgList.forEach(prg -> {
+            try {
+                repo.logPrgStateExec(prg);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        });
 
-        if(displayFlag) System.out.println(prg.toString()+'\n');
-        repo.logPrgStateExec();
+        List<Callable<PrgState>> callList = prgList.stream()
+                .map((PrgState p) -> (Callable<PrgState>) (p::oneStep))
+                .collect(Collectors.toList());
 
-        while (!prg.getStk().isEmpty()){
-            oneStep(prg);
+        List<PrgState> newPrgList = executor.invokeAll(callList).stream()
+                .map(future -> {
+                    try {
+                        return future.get();
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                    return null;
+                })
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
 
-            prg.getHeap().setContent(garbageCollector(
-                    getAddrFromSymTable(prg.getSymTbl().getContent().values()),
-                    prg.getHeap()));
+        prgList.addAll(newPrgList);
 
-            if(displayFlag) System.out.println(prg.toString()+'\n');
-            repo.logPrgStateExec();
-        }
+        prgList.forEach(prg -> {
+            try {
+                repo.logPrgStateExec(prg);
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
+        });
+        repo.setPrgList(prgList);
     }
 
+    List<PrgState> removeCompletedPrg(List<PrgState> inPrgList) {
+        return inPrgList.stream()
+                .filter(PrgState::isNotCompleted)
+                .collect(Collectors.toList());
+    }
+
+    void allStep() throws InterruptedException {
+        executor = Executors.newFixedThreadPool(2);
+        List<PrgState> prgList = removeCompletedPrg(repo.getPrgList());
+
+        while (prgList.size() > 0) {
+
+            IHeap hp = prgList.get(0).getHeap();
+            List<Integer> addressList = new ArrayList<>();
+            prgList.forEach(prg -> addressList.addAll(getAddrFromSymTable(prg.getSymTbl().getContent().values())));
+            hp.setContent(garbageCollector(addressList, hp));
+
+            oneStepForAllPrg(prgList);
+            prgList = removeCompletedPrg(repo.getPrgList());
+        }
+        executor.shutdownNow();
+        repo.setPrgList(prgList);
+    }
+
+
 }
+

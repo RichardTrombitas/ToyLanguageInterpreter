@@ -53,7 +53,7 @@ public class SymTable implements ISymTable {
 
     public String toStringSpecial() {
         StringBuilder res = new StringBuilder();
-        for (Map.Entry mapElement : map.entrySet()) {
+        for (Map.Entry<String, Value> mapElement : map.entrySet()) {
             res.append(mapElement.getKey()).append(" --> ");
             res.append(mapElement.getValue()).append("\n");
         }

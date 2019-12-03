@@ -13,11 +13,9 @@ import Model.Values.IntValue;
 import Repository.IRepository;
 import Repository.Repository;
 
-import java.io.IOException;
-
 public class Interpreter {
 
-    public static void main(String[] args) throws MyException, IOException {
+    public static void main(String[] args) throws MyException{
 
         // hard coded programs here
 
@@ -33,7 +31,7 @@ public class Interpreter {
         Heap hp1 = new Heap();
         PrgState prg1 = new PrgState(stk1, symtbl1, out1, ex1, ft1, hp1);
         IRepository repo1 = new Repository(prg1,"log1.txt");
-        Controller ctr1 = new Controller(repo1, true);
+        Controller ctr1 = new Controller(repo1);
 
         //int a;
         //int b;
@@ -53,7 +51,7 @@ public class Interpreter {
         Heap hp2= new Heap();
         PrgState prg2 = new PrgState(stk2, symtbl2, out2, ex2, ft2, hp2);
         IRepository repo2 = new Repository(prg2,"log2.txt");
-        Controller ctr2 = new Controller(repo2, true);
+        Controller ctr2 = new Controller(repo2);
 
         //bool a;
         //int v;
@@ -73,7 +71,7 @@ public class Interpreter {
         Heap hp3 = new Heap();
         PrgState prg3 = new PrgState(stk3, symtbl3, out3, ex3, ft3, hp3);
         IRepository repo3 = new Repository(prg3,"log3.txt");
-        Controller ctr3 = new Controller(repo3, true);
+        Controller ctr3 = new Controller(repo3);
 
         //Ref int v;
         //new(v,20);
@@ -93,7 +91,7 @@ public class Interpreter {
         Heap hp4 = new Heap();
         PrgState prg4 = new PrgState(stk4, symtbl4, out4, ex4, ft4, hp4);
         IRepository repo4 = new Repository(prg4,"log4.txt");
-        Controller ctr4 = new Controller(repo4, true);
+        Controller ctr4 = new Controller(repo4);
 
         //Ref int v;
         //new(v,20);
@@ -115,7 +113,7 @@ public class Interpreter {
         Heap hp5 = new Heap();
         PrgState prg5 = new PrgState(stk5, symtbl5, out5, ex5, ft5, hp5);
         IRepository repo5 = new Repository(prg5,"log5.txt");
-        Controller ctr5 = new Controller(repo5, true);
+        Controller ctr5 = new Controller(repo5);
 
         //Ref int v;
         //new(v,20);
@@ -135,7 +133,7 @@ public class Interpreter {
         Heap hp6 = new Heap();
         PrgState prg6 = new PrgState(stk6, symtbl6, out6, ex6, ft6, hp6);
         IRepository repo6 = new Repository(prg6,"log6.txt");
-        Controller ctr6 = new Controller(repo6, true);
+        Controller ctr6 = new Controller(repo6);
 
         //Ref int v;
         //new(v,20);
@@ -156,7 +154,7 @@ public class Interpreter {
         Heap hp7 = new Heap();
         PrgState prg7 = new PrgState(stk7, symtbl7, out7, ex7, ft7, hp7);
         IRepository repo7 = new Repository(prg7,"log7.txt");
-        Controller ctr7 = new Controller(repo7, true);
+        Controller ctr7 = new Controller(repo7);
 
         //int v;
         //v=4;
@@ -175,7 +173,35 @@ public class Interpreter {
         Heap hp8 = new Heap();
         PrgState prg8 = new PrgState(stk8, symtbl8, out8, ex8, ft8, hp8);
         IRepository repo8 = new Repository(prg8,"log8.txt");
-        Controller ctr8 = new Controller(repo8, true);
+        Controller ctr8 = new Controller(repo8);
+
+        //int v;
+        //Ref int a;
+        //v=10;
+        //new(a,22);
+        //fork(wH(a,30);v=32;print(v);print(rH(a)));
+        //print(v);
+        //print(rH(a));
+        IStmt ex9 = new CompStmt(new VarDeclStmt("v", new IntType()),
+                        new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
+                            new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(10))),
+                                new CompStmt(new HeapAllocStmt("a",new ValueExp(new IntValue(22))),
+                                    new CompStmt(new ForkStmt(new CompStmt(
+                                        new WriteHeapStmt("a", new ValueExp(new IntValue(30))),
+                                            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
+                                                new CompStmt(new PrintStmt(new VarExp("v")),
+                                                    new PrintStmt(new ReadHeapExp(new VarExp("a"))))))),
+                                                         new CompStmt(new PrintStmt(new VarExp("v")),
+                                                              new PrintStmt(new ReadHeapExp(new VarExp("a")))))))));
+
+        SymTable symtbl9 = new SymTable();
+        OutputList out9 = new OutputList();
+        ExeStack stk9 = new ExeStack();
+        FileTable ft9 = new FileTable();
+        Heap hp9 = new Heap();
+        PrgState prg9 = new PrgState(stk9, symtbl9, out9, ex9, ft9, hp9);
+        IRepository repo9 = new Repository(prg9,"log9.txt");
+        Controller ctr9 = new Controller(repo9);
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
@@ -187,27 +213,7 @@ public class Interpreter {
         menu.addCommand(new RunExample("6",ex6.toString(),ctr6));
         menu.addCommand(new RunExample("7",ex7.toString(),ctr7));
         menu.addCommand(new RunExample("8",ex8.toString(),ctr8));
+        menu.addCommand(new RunExample("9",ex9.toString(),ctr9));
         menu.show();
-
-//        ctr1.allStep();
-//
-//        ValueExp varf = new ValueExp(new StringValue("test.in"));
-//        OpenRFileStmt s = new OpenRFileStmt(varf);
-//        s.execute(prg1);
-//
-//        ReadFileStmt s1 = new ReadFileStmt(varf,  "v");
-//        s1.execute(prg1);
-//
-//        System.out.println("v="+prg1.getSymTbl().lookup("v"));
-//
-//
-//        ReadFileStmt s2 = new ReadFileStmt(varf,  "v");
-//        s2.execute(prg1);
-//
-//        System.out.println("v="+prg1.getSymTbl().lookup("v"));
-//
-//        CloseRFileStmt c = new CloseRFileStmt(varf);
-
-
     }
 }

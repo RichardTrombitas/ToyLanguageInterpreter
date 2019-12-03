@@ -32,7 +32,7 @@ public class FileTable implements IFileTable {
 
     public String toStringSpecial() {
         StringBuilder res = new StringBuilder();
-        for (Map.Entry mapElement : map.entrySet()) {
+        for (Map.Entry<StringValue, BufferedReader> mapElement : map.entrySet()) {
             res.append(mapElement.getKey()).append(" --> ");
             res.append(mapElement.getValue()).append("\n");
         }
