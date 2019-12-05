@@ -17,7 +17,7 @@ public class Interpreter {
 
     public static void main(String[] args) throws MyException{
 
-        // hard coded programs here
+        //hard coded programs here
 
         //int v;
         //v = 2;

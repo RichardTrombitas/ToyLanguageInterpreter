@@ -41,7 +41,7 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException {
+    public void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException {
         prgList.forEach(prg -> {
             try {
                 repo.logPrgStateExec(prg);
@@ -78,18 +78,17 @@ public class Controller {
         repo.setPrgList(prgList);
     }
 
-    List<PrgState> removeCompletedPrg(List<PrgState> inPrgList) {
+    public List<PrgState> removeCompletedPrg(List<PrgState> inPrgList) {
         return inPrgList.stream()
                 .filter(PrgState::isNotCompleted)
                 .collect(Collectors.toList());
     }
 
-    void allStep() throws InterruptedException {
+    public void allStep() throws InterruptedException {
         executor = Executors.newFixedThreadPool(2);
         List<PrgState> prgList = removeCompletedPrg(repo.getPrgList());
 
         while (prgList.size() > 0) {
-
             IHeap hp = prgList.get(0).getHeap();
             List<Integer> addressList = new ArrayList<>();
             prgList.forEach(prg -> addressList.addAll(getAddrFromSymTable(prg.getSymTbl().getContent().values())));
