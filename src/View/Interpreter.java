@@ -23,7 +23,8 @@ public class Interpreter {
         //v = 2;
         //Print(v);
         IStmt ex1 = new CompStmt(new VarDeclStmt("v", new IntType()),
-                new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(2))), new PrintStmt(new VarExp("v"))));
+                    new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(2))), new PrintStmt(new VarExp("v"))));
+
         SymTable symtbl1 = new SymTable();
         OutputList out1 = new OutputList();
         ExeStack stk1 = new ExeStack();
@@ -39,11 +40,12 @@ public class Interpreter {
         //b = a + 1;
         //Print(b);
         IStmt ex2 = new CompStmt(new VarDeclStmt("a", new IntType()),
-                new CompStmt(new VarDeclStmt("b", new IntType()),
-                        new CompStmt(new AssignStmt("a", new ArithExp(new ValueExp(new IntValue(2)),
-                                new ArithExp(new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5)), 3), 1)),
-                                new CompStmt(new AssignStmt("b", new ArithExp(new VarExp("a"),
-                                        new ValueExp(new IntValue(1)), 1)), new PrintStmt(new VarExp("b"))))));
+                    new CompStmt(new VarDeclStmt("b", new IntType()),
+                    new CompStmt(new AssignStmt("a", new ArithExp(new ValueExp(new IntValue(2)),
+                    new ArithExp(new ValueExp(new IntValue(3)), new ValueExp(new IntValue(5)), 3), 1)),
+                    new CompStmt(new AssignStmt("b", new ArithExp(new VarExp("a"),
+                    new ValueExp(new IntValue(1)), 1)), new PrintStmt(new VarExp("b"))))));
+
         SymTable symtbl2 = new SymTable();
         OutputList out2 = new OutputList();
         ExeStack stk2 = new ExeStack();
@@ -59,11 +61,12 @@ public class Interpreter {
         //(If a Then v = 2 Else v = 3);
         //Print(v);
         IStmt ex3 = new CompStmt(new VarDeclStmt("a", new BoolType()),
-                new CompStmt(new VarDeclStmt("v", new IntType()),
-                        new CompStmt(new AssignStmt("a", new ValueExp(new BoolValue(true))),
-                                new CompStmt(new IfStmt(new VarExp("a"), new AssignStmt("v",
-                                        new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))),
-                                        new PrintStmt(new VarExp("v"))))));
+                    new CompStmt(new VarDeclStmt("v", new IntType()),
+                    new CompStmt(new AssignStmt("a", new ValueExp(new BoolValue(true))),
+                    new CompStmt(new IfStmt(new VarExp("a"), new AssignStmt("v",
+                    new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))),
+                    new PrintStmt(new VarExp("v"))))));
+
         SymTable symtbl3 = new SymTable();
         OutputList out3 = new OutputList();
         ExeStack stk3 = new ExeStack();
@@ -80,10 +83,11 @@ public class Interpreter {
         //print(v);
         //print(a);
         IStmt ex4 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                        new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
-                            new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-                                new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
-                                    new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new VarExp("a")))))));
+                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
+                    new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
+                    new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new VarExp("a")))))));
+
         SymTable symtbl4 = new SymTable();
         OutputList out4 = new OutputList();
         ExeStack stk4 = new ExeStack();
@@ -100,12 +104,13 @@ public class Interpreter {
         //print(rH(v));
         //print(rH(rH(a))+5);
         IStmt ex5 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
-                        new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-                                new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
-                                        new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v"))),
-                                                new PrintStmt(new ArithExp(new ReadHeapExp(new ReadHeapExp(new VarExp("a"))),
-                                                new ValueExp(new IntValue(5)), 1)))))));
+                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
+                    new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
+                    new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v"))),
+                    new PrintStmt(new ArithExp(new ReadHeapExp(new ReadHeapExp(new VarExp("a"))),
+                    new ValueExp(new IntValue(5)), 1)))))));
+
         SymTable symtbl5 = new SymTable();
         OutputList out5 = new OutputList();
         ExeStack stk5 = new ExeStack();
@@ -121,11 +126,12 @@ public class Interpreter {
         //wH(v,30);
         //print(rH(v)+5);
         IStmt ex6 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                        new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
-                            new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v"))),
-                                new CompStmt(new WriteHeapStmt("v", new ValueExp(new IntValue(30))),
-                                        new PrintStmt(new ArithExp(new ReadHeapExp(new VarExp("v")),
-                                        new ValueExp(new IntValue(5)), 1))))));
+                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v"))),
+                    new CompStmt(new WriteHeapStmt("v", new ValueExp(new IntValue(30))),
+                    new PrintStmt(new ArithExp(new ReadHeapExp(new VarExp("v")),
+                    new ValueExp(new IntValue(5)), 1))))));
+
         SymTable symtbl6 = new SymTable();
         OutputList out6 = new OutputList();
         ExeStack stk6 = new ExeStack();
@@ -142,11 +148,12 @@ public class Interpreter {
         //new(v,30);
         //print(rH(rH(a)))
         IStmt ex7 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
-                        new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-                                new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
-                                        new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(30))),
-                                                new PrintStmt(new ReadHeapExp(new ReadHeapExp(new VarExp("a")))))))));
+                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
+                    new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
+                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(30))),
+                    new PrintStmt(new ReadHeapExp(new ReadHeapExp(new VarExp("a")))))))));
+
         SymTable symtbl7 = new SymTable();
         OutputList out7 = new OutputList();
         ExeStack stk7 = new ExeStack();
@@ -161,11 +168,12 @@ public class Interpreter {
         //(while (v>0) print(v);v=v-1);
         //print(v);
         IStmt ex8 = new CompStmt(new VarDeclStmt("v", new IntType()),
-                      new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(4))),
-                          new CompStmt(new WhileStmt(new RelationalExp(new VarExp("v"), new ValueExp(new IntValue(0)),">"),
-                                        new CompStmt(new PrintStmt(new VarExp("v")),
-                                        new AssignStmt("v", new ArithExp(new VarExp("v"), new ValueExp(new IntValue(1)), 2)))),
-                                            new PrintStmt(new VarExp("v")))));
+                    new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(4))),
+                    new CompStmt(new WhileStmt(new RelationalExp(new VarExp("v"), new ValueExp(new IntValue(0)),">"),
+                    new CompStmt(new PrintStmt(new VarExp("v")),
+                    new AssignStmt("v", new ArithExp(new VarExp("v"), new ValueExp(new IntValue(1)), 2)))),
+                    new PrintStmt(new VarExp("v")))));
+
         SymTable symtbl8 = new SymTable();
         OutputList out8 = new OutputList();
         ExeStack stk8 = new ExeStack();
@@ -183,16 +191,16 @@ public class Interpreter {
         //print(v);
         //print(rH(a));
         IStmt ex9 = new CompStmt(new VarDeclStmt("v", new IntType()),
-                        new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
-                            new CompStmt(new AssignStmt("v",new ValueExp(new IntValue(10))),
-                                new CompStmt(new HeapAllocStmt("a",new ValueExp(new IntValue(22))),
-                                    new CompStmt(new ForkStmt(new CompStmt(
-                                        new WriteHeapStmt("a", new ValueExp(new IntValue(30))),
-                                            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
-                                                new CompStmt(new PrintStmt(new VarExp("v")),
-                                                    new PrintStmt(new ReadHeapExp(new VarExp("a"))))))),
-                                                         new CompStmt(new PrintStmt(new VarExp("v")),
-                                                              new PrintStmt(new ReadHeapExp(new VarExp("a")))))))));
+                    new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
+                    new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
+                    new CompStmt(new HeapAllocStmt("a", new ValueExp(new IntValue(22))),
+                    new CompStmt(new ForkStmt(
+                            new CompStmt(new WriteHeapStmt("a", new ValueExp(new IntValue(30))),
+                            new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
+                            new CompStmt(new PrintStmt(new VarExp("v")),
+                            new PrintStmt(new ReadHeapExp(new VarExp("a"))))))),
+                    new CompStmt(new PrintStmt(new VarExp("v")),
+                    new PrintStmt(new ReadHeapExp(new VarExp("a")))))))));
 
         SymTable symtbl9 = new SymTable();
         OutputList out9 = new OutputList();

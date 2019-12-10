@@ -91,6 +91,7 @@ public class PrgState {
     public PrgState oneStep() throws MyException, IOException {
         if (exeStack.isEmpty()) throw new MyException("prgstate stack is empty");
         IStmt crtStmt = exeStack.pop();
+        //System.out.println("\n now executing: " + crtStmt.toString());
         return crtStmt.execute(this);
     }
 }

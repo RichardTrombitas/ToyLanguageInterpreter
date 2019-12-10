@@ -17,12 +17,11 @@ public class ForkStmt implements IStmt {
 
     public PrgState execute(PrgState state) {
         IExeStack es = new ExeStack();
-        es.push(stmt);
         ISymTable symTbl = state.getSymTbl().deepCopy();
         IHeap hp = state.getHeap();
         IFileTable ft = state.getFileTable();
         IOutputList out = state.getOutList();
 
-        return new PrgState(es, symTbl, out, new NopStmt(), ft, hp);
+        return new PrgState(es, symTbl, out, stmt, ft, hp);
     }
 }

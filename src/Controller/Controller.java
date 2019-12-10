@@ -51,18 +51,18 @@ public class Controller {
         });
 
         List<Callable<PrgState>> callList = prgList.stream()
-                .map((PrgState p) -> (Callable<PrgState>) (p::oneStep))
+                .map((PrgState p) -> (Callable<PrgState>)(p::oneStep))
                 .collect(Collectors.toList());
 
         List<PrgState> newPrgList = executor.invokeAll(callList).stream()
                 .map(future -> {
-                    try {
-                        return future.get();
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                    }
-                    return null;
-                })
+                        try {
+                            return future.get();
+                        } catch (Exception e) {
+                            System.out.println(e.getMessage());
+                        }
+                        return null;
+                    })
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
 
@@ -90,6 +90,7 @@ public class Controller {
 
         while (prgList.size() > 0) {
             IHeap hp = prgList.get(0).getHeap();
+
             List<Integer> addressList = new ArrayList<>();
             prgList.forEach(prg -> addressList.addAll(getAddrFromSymTable(prg.getSymTbl().getContent().values())));
             hp.setContent(garbageCollector(addressList, hp));
