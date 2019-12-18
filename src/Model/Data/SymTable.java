@@ -20,7 +20,9 @@ public class SymTable implements ISymTable {
         map.put(id, val);
     }
 
-    public void delete(String id) {map.remove(id);}
+    public void delete(String id) {
+        map.remove(id);
+    }
 
     @Override
     public Map<String, Value> getContent() {
@@ -33,12 +35,11 @@ public class SymTable implements ISymTable {
     }
 
     @Override
-    public ISymTable deepCopy(){
+    public ISymTable deepCopy() {
         ISymTable s = new SymTable();
 
         Map<String, Value> mapCopy = new HashMap<>();
-        for (Map.Entry<String, Value> entry : map.entrySet())
-        {
+        for (Map.Entry<String, Value> entry : map.entrySet()) {
             mapCopy.put(entry.getKey(), entry.getValue().copy());
         }
         s.setContent(mapCopy);
@@ -46,8 +47,8 @@ public class SymTable implements ISymTable {
     }
 
     @Override
-    public String toString(){
-        return "SymTable: "+map.toString();
+    public String toString() {
+        return "SymTable: " + map.toString();
     }
 
     public String toStringSpecial() {

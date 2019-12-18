@@ -14,7 +14,7 @@ public class AssignStmt implements IStmt {
     private String id;
     private Exp exp;
 
-    public AssignStmt(String id, Exp exp){
+    public AssignStmt(String id, Exp exp) {
         this.id = id;
         this.exp = exp;
     }
@@ -41,8 +41,8 @@ public class AssignStmt implements IStmt {
         return null;
     }
 
-    public Map<String,Type> typecheck(Map<String, Type> typeEnv) throws MyException{
-        if(!typeEnv.containsKey(id)){
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        if (!typeEnv.containsKey(id)) {
             throw new MyException("The variable " + id + " is not defined!");
         }
         Type typevar = typeEnv.get(id);
@@ -52,7 +52,7 @@ public class AssignStmt implements IStmt {
         } else {
             throw new MyException("Assignment: right hand side and left hand side have different types" +
                     " (" + typevar.toString() + " != " + typexp.toString() + ")!");
-       }
+        }
     }
 
 }

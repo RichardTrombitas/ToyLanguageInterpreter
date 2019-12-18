@@ -3,7 +3,7 @@ package Model.Values;
 import Model.Types.BoolType;
 import Model.Types.Type;
 
-public class BoolValue implements Value{
+public class BoolValue implements Value {
 
     private boolean val;
 
@@ -28,5 +28,7 @@ public class BoolValue implements Value{
         return new BoolType();
     }
 
-    public BoolValue copy() { return new BoolValue(val); }
+    public BoolValue copy() {
+        return new BoolValue(val);
+    }
 }

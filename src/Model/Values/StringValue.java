@@ -28,5 +28,7 @@ public class StringValue implements Value {
         return new StringType();
     }
 
-    public StringValue copy() { return new StringValue(val); }
+    public StringValue copy() {
+        return new StringValue(val);
+    }
 }

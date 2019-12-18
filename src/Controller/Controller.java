@@ -51,18 +51,18 @@ public class Controller {
         });
 
         List<Callable<PrgState>> callList = prgList.stream()
-                .map((PrgState p) -> (Callable<PrgState>)(p::oneStep))
+                .map((PrgState p) -> (Callable<PrgState>) (p::oneStep))
                 .collect(Collectors.toList());
 
         List<PrgState> newPrgList = executor.invokeAll(callList).stream()
                 .map(future -> {
-                        try {
-                            return future.get();
-                        } catch (Exception e) {
-                            System.out.println(e.getMessage());
-                        }
-                        return null;
-                    })
+                    try {
+                        return future.get();
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                    return null;
+                })
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
 

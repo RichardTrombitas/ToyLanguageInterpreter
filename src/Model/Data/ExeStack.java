@@ -9,24 +9,24 @@ import java.util.Stack;
 public class ExeStack implements IExeStack {
     private Stack<IStmt> stack = new Stack<>();
 
-    public IStmt pop(){
+    public IStmt pop() {
         return stack.pop();
     }
 
-    public void push(IStmt elem){
+    public void push(IStmt elem) {
         stack.push(elem);
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return stack.isEmpty();
     }
 
     @Override
-    public String toString(){
-        return "ExeStack: "+stack.toString();
+    public String toString() {
+        return "ExeStack: " + stack.toString();
     }
 
-    public String toStringSpecial(){
+    public String toStringSpecial() {
         StringBuilder res = new StringBuilder();
         ListIterator li = stack.listIterator(stack.size());
         while (li.hasPrevious()) {

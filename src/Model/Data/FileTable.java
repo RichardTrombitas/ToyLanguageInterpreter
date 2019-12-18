@@ -26,8 +26,8 @@ public class FileTable implements IFileTable {
     }
 
     @Override
-    public String toString(){
-        return "FileTable: "+map.toString();
+    public String toString() {
+        return "FileTable: " + map.toString();
     }
 
     public String toStringSpecial() {

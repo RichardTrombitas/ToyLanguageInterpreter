@@ -231,6 +231,18 @@ public class Interpreter {
         IRepository repo9 = new Repository(prg9,"log9.txt");
         Controller ctr9 = new Controller(repo9);
 
+        // int x, int y
+        // x = 10
+        // y = x + true
+        IStmt brokenEx1 = new CompStmt(new VarDeclStmt("x", new IntType()),
+                          new CompStmt(new VarDeclStmt("y", new IntType()),
+                          new CompStmt(new AssignStmt("x", new ValueExp(new IntValue(10))),
+                          new AssignStmt("y", new ArithExp(new VarExp("x"),
+                                 new ValueExp(new BoolValue(true)), 1)))));
+
+        //brokenEx1.typecheck(new HashMap<>());
+
+
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
         menu.addCommand(new RunExample("1",ex1.toString(),ctr1));

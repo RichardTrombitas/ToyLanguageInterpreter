@@ -16,11 +16,11 @@ public class PrgState {
     //private IStmt originalProgram;
 
     private static int code = 0;
-    private synchronized static int generateCode(){
+
+    private synchronized static int generateCode() {
         PrgState.code = PrgState.code + 1;
         return code;
     }
-
 
 
     public PrgState(IExeStack stk, ISymTable symtbl, IOutputList ot, IStmt prg, IFileTable ft, IHeap hp) {
@@ -74,13 +74,13 @@ public class PrgState {
         heap = hp;
     }
 
-    public int getId(){
+    public int getId() {
         return id;
     }
 
     @Override
     public String toString() {
-        return "PrgState id: "+ id + "\n" + exeStack.toString() + "\n" +
+        return "PrgState id: " + id + "\n" + exeStack.toString() + "\n" +
                 symTable.toString() + "\n" + heap.toString() + "\n" + out.toString() + "\n";
     }
 

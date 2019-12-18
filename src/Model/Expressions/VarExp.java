@@ -25,7 +25,7 @@ public class VarExp implements Exp {
     }
 
     public Type typecheck(Map<String, Type> typeEnv) throws MyException {
-        if(!typeEnv.containsKey(id)){
+        if (!typeEnv.containsKey(id)) {
             throw new MyException("The variable " + id + " is not defined!");
         }
         return typeEnv.get(id);
