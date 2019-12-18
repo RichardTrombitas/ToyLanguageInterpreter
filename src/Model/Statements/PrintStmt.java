@@ -5,6 +5,9 @@ import Model.Data.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
+import Model.Types.Type;
+
+import java.util.Map;
 
 public class PrintStmt implements IStmt {
     private Exp exp;
@@ -25,6 +28,11 @@ public class PrintStmt implements IStmt {
         out.add(exp.eval(symTable, hp));
 
         return null;
+    }
+
+    public Map<String,Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        exp.typecheck(typeEnv);
+        return typeEnv;
     }
   
 }

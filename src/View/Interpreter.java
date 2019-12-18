@@ -13,6 +13,8 @@ import Model.Values.IntValue;
 import Repository.IRepository;
 import Repository.Repository;
 
+import java.util.HashMap;
+
 public class Interpreter {
 
     public static void main(String[] args) throws MyException{
@@ -24,6 +26,8 @@ public class Interpreter {
         //Print(v);
         IStmt ex1 = new CompStmt(new VarDeclStmt("v", new IntType()),
                     new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(2))), new PrintStmt(new VarExp("v"))));
+
+        ex1.typecheck(new HashMap<>());
 
         SymTable symtbl1 = new SymTable();
         OutputList out1 = new OutputList();
@@ -46,6 +50,8 @@ public class Interpreter {
                     new CompStmt(new AssignStmt("b", new ArithExp(new VarExp("a"),
                     new ValueExp(new IntValue(1)), 1)), new PrintStmt(new VarExp("b"))))));
 
+        ex2.typecheck(new HashMap<>());
+
         SymTable symtbl2 = new SymTable();
         OutputList out2 = new OutputList();
         ExeStack stk2 = new ExeStack();
@@ -67,6 +73,8 @@ public class Interpreter {
                     new ValueExp(new IntValue(2))), new AssignStmt("v", new ValueExp(new IntValue(3)))),
                     new PrintStmt(new VarExp("v"))))));
 
+        ex3.typecheck(new HashMap<>());
+
         SymTable symtbl3 = new SymTable();
         OutputList out3 = new OutputList();
         ExeStack stk3 = new ExeStack();
@@ -83,10 +91,12 @@ public class Interpreter {
         //print(v);
         //print(a);
         IStmt ex4 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new NewStmt("v", new ValueExp(new IntValue(20))),
                     new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-                    new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
+                    new CompStmt(new NewStmt("a", new VarExp("v")),
                     new CompStmt(new PrintStmt(new VarExp("v")), new PrintStmt(new VarExp("a")))))));
+
+        ex4.typecheck(new HashMap<>());
 
         SymTable symtbl4 = new SymTable();
         OutputList out4 = new OutputList();
@@ -104,12 +114,14 @@ public class Interpreter {
         //print(rH(v));
         //print(rH(rH(a))+5);
         IStmt ex5 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new NewStmt("v", new ValueExp(new IntValue(20))),
                     new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-                    new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
+                    new CompStmt(new NewStmt("a", new VarExp("v")),
                     new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v"))),
                     new PrintStmt(new ArithExp(new ReadHeapExp(new ReadHeapExp(new VarExp("a"))),
                     new ValueExp(new IntValue(5)), 1)))))));
+
+        ex5.typecheck(new HashMap<>());
 
         SymTable symtbl5 = new SymTable();
         OutputList out5 = new OutputList();
@@ -126,11 +138,13 @@ public class Interpreter {
         //wH(v,30);
         //print(rH(v)+5);
         IStmt ex6 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new NewStmt("v", new ValueExp(new IntValue(20))),
                     new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v"))),
                     new CompStmt(new WriteHeapStmt("v", new ValueExp(new IntValue(30))),
                     new PrintStmt(new ArithExp(new ReadHeapExp(new VarExp("v")),
                     new ValueExp(new IntValue(5)), 1))))));
+
+        ex6.typecheck(new HashMap<>());
 
         SymTable symtbl6 = new SymTable();
         OutputList out6 = new OutputList();
@@ -148,11 +162,13 @@ public class Interpreter {
         //new(v,30);
         //print(rH(rH(a)))
         IStmt ex7 = new CompStmt(new VarDeclStmt("v", new RefType(new IntType())),
-                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(20))),
+                    new CompStmt(new NewStmt("v", new ValueExp(new IntValue(20))),
                     new CompStmt(new VarDeclStmt("a", new RefType(new RefType(new IntType()))),
-                    new CompStmt(new HeapAllocStmt("a", new VarExp("v")),
-                    new CompStmt(new HeapAllocStmt("v", new ValueExp(new IntValue(30))),
+                    new CompStmt(new NewStmt("a", new VarExp("v")),
+                    new CompStmt(new NewStmt("v", new ValueExp(new IntValue(30))),
                     new PrintStmt(new ReadHeapExp(new ReadHeapExp(new VarExp("a")))))))));
+
+        ex7.typecheck(new HashMap<>());
 
         SymTable symtbl7 = new SymTable();
         OutputList out7 = new OutputList();
@@ -174,6 +190,8 @@ public class Interpreter {
                     new AssignStmt("v", new ArithExp(new VarExp("v"), new ValueExp(new IntValue(1)), 2)))),
                     new PrintStmt(new VarExp("v")))));
 
+        ex8.typecheck(new HashMap<>());
+
         SymTable symtbl8 = new SymTable();
         OutputList out8 = new OutputList();
         ExeStack stk8 = new ExeStack();
@@ -193,7 +211,7 @@ public class Interpreter {
         IStmt ex9 = new CompStmt(new VarDeclStmt("v", new IntType()),
                     new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
                     new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(10))),
-                    new CompStmt(new HeapAllocStmt("a", new ValueExp(new IntValue(22))),
+                    new CompStmt(new NewStmt("a", new ValueExp(new IntValue(22))),
                     new CompStmt(new ForkStmt(
                             new CompStmt(new WriteHeapStmt("a", new ValueExp(new IntValue(30))),
                             new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(32))),
@@ -201,6 +219,8 @@ public class Interpreter {
                             new PrintStmt(new ReadHeapExp(new VarExp("a"))))))),
                     new CompStmt(new PrintStmt(new VarExp("v")),
                     new PrintStmt(new ReadHeapExp(new VarExp("a")))))))));
+
+        ex9.typecheck(new HashMap<>());
 
         SymTable symtbl9 = new SymTable();
         OutputList out9 = new OutputList();

@@ -3,8 +3,12 @@ import Model.Data.IHeap;
 import Model.Data.ISymTable;
 import Model.MyException;
 import Model.Types.BoolType;
+import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
+
+import java.util.Map;
 
 public class LogicExp implements Exp {
     private Exp e1;
@@ -50,5 +54,22 @@ public class LogicExp implements Exp {
             throw new MyException("the first operand is not a boolean");
         }
         return new BoolValue(false);
+    }
+
+    public Type typecheck(Map<String, Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = e1.typecheck(typeEnv);
+        typ2 = e2.typecheck(typeEnv);
+        if (typ1.equals(new BoolType())) {
+            if (typ2.equals(new BoolType())) {
+                return new BoolType();
+            } else {
+                throw new MyException("The second operand (" + e2.toString() + ") is of type "
+                        + typ2.toString() + " instead of bool!");
+            }
+        }   else {
+            throw new MyException("The first operand (" + e1.toString() + ") is of type "
+                    + typ1.toString() + " instead of bool!");
+        }
     }
 }

@@ -5,10 +5,14 @@ import Model.Data.ISymTable;
 import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
+import Model.Types.IntType;
 import Model.Types.RefType;
+import Model.Types.StringType;
 import Model.Types.Type;
 import Model.Values.RefValue;
 import Model.Values.Value;
+
+import java.util.Map;
 
 public class WriteHeapStmt implements IStmt {
     private String varName;
@@ -43,7 +47,7 @@ public class WriteHeapStmt implements IStmt {
         Value evalValue = exp.eval(symTbl, hp);
         Type evalValueType = evalValue.getType();
         if (!(((RefType) varType).getInner().equals(evalValueType))) {
-            throw new MyException(varType.toString() + " and " + evalValueType.toString() + " are not equal types!");
+            throw new MyException(((RefType) varType).getInner().toString() + " and " + evalValueType.toString() + " are not equal types!");
         }
 
         hp.update(addr, evalValue);
@@ -51,4 +55,19 @@ public class WriteHeapStmt implements IStmt {
         return null;
 
     }
+
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        Type typevar = typeEnv.get(varName);
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar instanceof RefType) {
+            if ((((RefType) typevar).getInner().equals(typexp))) {
+                return typeEnv;
+            } else {
+                throw new MyException("WriteHeap: right hand side and left hand side have different types!");
+            }
+        } else {
+            throw new MyException("The variable is not of RefType!");
+        }
+    }
+
 }

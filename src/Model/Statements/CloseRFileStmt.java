@@ -7,11 +7,13 @@ import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.StringType;
+import Model.Types.Type;
 import Model.Values.StringValue;
 import Model.Values.Value;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.Map;
 
 public class CloseRFileStmt implements IStmt {
     private Exp exp;
@@ -45,6 +47,15 @@ public class CloseRFileStmt implements IStmt {
         ft.delete((StringValue) val);
 
         return null;
+    }
+
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        Type typexp = exp.typecheck(typeEnv);
+        if (typexp.equals(new StringType())) {
+            return typeEnv;
+        } else {
+            throw new MyException("Expression is not of StringType!");
+        }
     }
 }
 

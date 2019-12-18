@@ -1,5 +1,11 @@
 package Model.Statements;
+import Model.MyException;
 import Model.PrgState;
+import Model.Types.BoolType;
+import Model.Types.Type;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class NopStmt implements IStmt{
 
@@ -8,5 +14,9 @@ public class NopStmt implements IStmt{
 
     public PrgState execute(PrgState state) {
         return null;
+    }
+
+    public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+        return typeEnv;
     }
 }

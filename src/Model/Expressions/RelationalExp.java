@@ -3,10 +3,14 @@ package Model.Expressions;
 import Model.Data.IHeap;
 import Model.Data.ISymTable;
 import Model.MyException;
+import Model.Types.BoolType;
 import Model.Types.IntType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Model.Values.Value;
+
+import java.util.Map;
 
 public class RelationalExp implements Exp {
     private Exp e1, e2;
@@ -49,5 +53,22 @@ public class RelationalExp implements Exp {
             throw new MyException("The first operand is not an integer!");
         }
         return new BoolValue(false);
+    }
+
+    public Type typecheck(Map<String, Type> typeEnv) throws MyException {
+        Type typ1, typ2;
+        typ1 = e1.typecheck(typeEnv);
+        typ2 = e2.typecheck(typeEnv);
+        if (typ1.equals(new IntType())) {
+            if (typ2.equals(new IntType())) {
+                return new BoolType();
+            } else {
+                throw new MyException("The second operand (" + e2.toString() + ") is of type "
+                        + typ2.toString() + " instead of int!");
+            }
+        } else {
+            throw new MyException("The first operand (" + e1.toString() + ") is of type "
+                    + typ1.toString() + " instead of int!");
+        }
     }
 }

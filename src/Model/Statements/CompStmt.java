@@ -1,7 +1,11 @@
 package Model.Statements;
 
 import Model.Data.IExeStack;
+import Model.MyException;
 import Model.PrgState;
+import Model.Types.Type;
+
+import java.util.Map;
 
 public class CompStmt implements IStmt {
     private IStmt first;
@@ -23,5 +27,9 @@ public class CompStmt implements IStmt {
         stk.push(first);
 
         return null;
+    }
+
+    public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+        return snd.typecheck(first.typecheck(typeEnv));
     }
 }

@@ -5,8 +5,12 @@ import Model.Expressions.Exp;
 import Model.MyException;
 import Model.PrgState;
 import Model.Types.BoolType;
+import Model.Types.Type;
 import Model.Values.BoolValue;
 import Model.Values.Value;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class WhileStmt implements IStmt {
     private Exp exp;
@@ -38,5 +42,15 @@ public class WhileStmt implements IStmt {
         }
 
         return null;
+    }
+
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        Type typexp = exp.typecheck(typeEnv);
+        if (typexp.equals(new BoolType())) {
+            stmt.typecheck(new HashMap<>(typeEnv));
+            return typeEnv;
+        } else {
+            throw new MyException("The WHILE expression (" + exp.toString() +") has the type " + typexp.toString() + " instead of bool!");
+        }
     }
 }

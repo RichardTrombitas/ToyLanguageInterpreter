@@ -1,7 +1,11 @@
 package Model.Statements;
 
 import Model.Data.*;
+import Model.MyException;
 import Model.PrgState;
+import Model.Types.Type;
+
+import java.util.Map;
 
 public class ForkStmt implements IStmt {
     private IStmt stmt;
@@ -23,5 +27,9 @@ public class ForkStmt implements IStmt {
         IOutputList out = state.getOutList();
 
         return new PrgState(es, symTbl, out, stmt, ft, hp);
+    }
+
+    public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+        return stmt.typecheck(typeEnv);
     }
 }

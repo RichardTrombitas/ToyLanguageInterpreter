@@ -4,6 +4,8 @@ import Model.MyException;
 import Model.PrgState;
 import Model.Types.*;
 
+import java.util.Map;
+
 public class VarDeclStmt implements IStmt {
     private String name;
     private Type typ;
@@ -42,5 +44,10 @@ public class VarDeclStmt implements IStmt {
             }
         }
         return null;
+    }
+
+    public Map<String,Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+        typeEnv.put(name,typ);
+        return typeEnv;
     }
 }

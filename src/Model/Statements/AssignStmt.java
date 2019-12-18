@@ -8,6 +8,8 @@ import Model.PrgState;
 import Model.Types.Type;
 import Model.Values.Value;
 
+import java.util.Map;
+
 public class AssignStmt implements IStmt {
     private String id;
     private Exp exp;
@@ -38,5 +40,16 @@ public class AssignStmt implements IStmt {
         }
         return null;
     }
+
+    public Map<String,Type> typecheck(Map<String, Type> typeEnv) throws MyException{
+        Type typevar = typeEnv.get(id);
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar.equals(typexp)) {
+            return typeEnv;
+        } else {
+            throw new MyException("Assignment: right hand side and left hand side have different types ");
+       }
+    }
+
 }
 

@@ -9,11 +9,13 @@ import Model.Types.*;
 import Model.Values.RefValue;
 import Model.Values.Value;
 
-public class HeapAllocStmt implements IStmt {
+import java.util.Map;
+
+public class NewStmt implements IStmt {
     private String varName;
     private Exp exp;
 
-    public HeapAllocStmt(String varName, Exp exp) {
+    public NewStmt(String varName, Exp exp) {
         this.varName = varName;
         this.exp = exp;
     }
@@ -49,5 +51,14 @@ public class HeapAllocStmt implements IStmt {
         symTbl.update(varName, new RefValue(addr, locationType));
 
         return null;
+    }
+
+    public Map<String,Type> typecheck(Map<String,Type> typeEnv) throws MyException{
+        Type typevar = typeEnv.get(varName);
+        Type typexp = exp.typecheck(typeEnv);
+        if (typevar.equals(new RefType(typexp)))
+            return typeEnv;
+        else
+            throw new MyException("NEW stmt: right hand side and left hand side have different types ");
     }
 }
