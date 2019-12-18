@@ -18,13 +18,13 @@ import java.util.Map;
 public class CloseRFileStmt implements IStmt {
     private Exp exp;
 
-    public CloseRFileStmt(Exp exp){
+    public CloseRFileStmt(Exp exp) {
         this.exp = exp;
     }
 
     @Override
     public String toString() {
-        return "Close file: "+exp.toString();
+        return "Close file: " + exp.toString();
     }
 
     @Override
@@ -33,11 +33,11 @@ public class CloseRFileStmt implements IStmt {
         ISymTable symTbl = state.getSymTbl();
         IHeap hp = state.getHeap();
         Value val = exp.eval(symTbl, hp);
-        if(!val.getType().equals(new StringType())) {
+        if (!val.getType().equals(new StringType())) {
             throw new MyException("The type of the evaluated expression is not of StringType!");
         }
 
-        if(!ft.isDefined((StringValue) val)){
+        if (!ft.isDefined((StringValue) val)) {
             throw new MyException("There is no entry associated to this value in the FileTable!");
         }
 

@@ -30,7 +30,7 @@ public class ForkStmt implements IStmt {
         return new PrgState(es, symTbl, out, stmt, ft, hp);
     }
 
-    public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
         return stmt.typecheck(new HashMap<>(typeEnv));
     }
 }

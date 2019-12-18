@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac2c38c4-af6a-4a2c-9a6c-b2abefa2590b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Data/IOutputList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Data/IOutputList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Expressions/LogicExp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CloseRFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/CompStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ForkStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ForkStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NewStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NewStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/NopStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/PrintStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/ReadFileStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Statements/WriteHeapStmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Statements/WriteHeapStmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Types/StringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Types/StringType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Repository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

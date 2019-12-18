@@ -57,7 +57,7 @@ public class WriteHeapStmt implements IStmt {
     }
 
     public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
-        if(!typeEnv.containsKey(varName)){
+        if (!typeEnv.containsKey(varName)) {
             throw new MyException("The variable " + varName + " is not defined!");
         }
         Type typevar = typeEnv.get(varName);
