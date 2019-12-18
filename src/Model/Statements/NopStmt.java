@@ -16,7 +16,7 @@ public class NopStmt implements IStmt{
         return null;
     }
 
-    public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+    public Map<String, Type> typecheck(Map<String,Type> typeEnv) {
         return typeEnv;
     }
 }

@@ -5,6 +5,7 @@ import Model.MyException;
 import Model.PrgState;
 import Model.Types.Type;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class ForkStmt implements IStmt {
@@ -30,6 +31,6 @@ public class ForkStmt implements IStmt {
     }
 
     public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException {
-        return stmt.typecheck(typeEnv);
+        return stmt.typecheck(new HashMap<>(typeEnv));
     }
 }

@@ -50,7 +50,8 @@ public class WhileStmt implements IStmt {
             stmt.typecheck(new HashMap<>(typeEnv));
             return typeEnv;
         } else {
-            throw new MyException("The WHILE expression (" + exp.toString() +") has the type " + typexp.toString() + " instead of bool!");
+            throw new MyException("The WHILE expression (" + exp.toString() +") has the type " +
+                    typexp.toString() + " instead of bool!");
         }
     }
 }

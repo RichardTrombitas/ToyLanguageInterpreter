@@ -57,6 +57,9 @@ public class WriteHeapStmt implements IStmt {
     }
 
     public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        if(!typeEnv.containsKey(varName)){
+            throw new MyException("The variable " + varName + " is not defined!");
+        }
         Type typevar = typeEnv.get(varName);
         Type typexp = exp.typecheck(typeEnv);
         if (typevar instanceof RefType) {
@@ -66,8 +69,7 @@ public class WriteHeapStmt implements IStmt {
                 throw new MyException("WriteHeap: right hand side and left hand side have different types!");
             }
         } else {
-            throw new MyException("The variable is not of RefType!");
+            throw new MyException("The variable" + varName + " is not of RefType!");
         }
     }
-
 }

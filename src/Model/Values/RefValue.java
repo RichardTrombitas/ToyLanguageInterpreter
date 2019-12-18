@@ -29,5 +29,9 @@ public class RefValue implements Value {
     public Type getType() {
         return new RefType(locationType);
     }
+
+    public RefValue copy() {
+        return new RefValue(address, locationType);
+    }
 }
 

@@ -42,12 +42,16 @@ public class AssignStmt implements IStmt {
     }
 
     public Map<String,Type> typecheck(Map<String, Type> typeEnv) throws MyException{
+        if(!typeEnv.containsKey(id)){
+            throw new MyException("The variable " + id + " is not defined!");
+        }
         Type typevar = typeEnv.get(id);
         Type typexp = exp.typecheck(typeEnv);
         if (typevar.equals(typexp)) {
             return typeEnv;
         } else {
-            throw new MyException("Assignment: right hand side and left hand side have different types ");
+            throw new MyException("Assignment: right hand side and left hand side have different types" +
+                    " (" + typevar.toString() + " != " + typexp.toString() + ")!");
        }
     }
 

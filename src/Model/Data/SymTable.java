@@ -39,10 +39,9 @@ public class SymTable implements ISymTable {
         Map<String, Value> mapCopy = new HashMap<>();
         for (Map.Entry<String, Value> entry : map.entrySet())
         {
-            mapCopy.put(entry.getKey(), entry.getValue());
+            mapCopy.put(entry.getKey(), entry.getValue().copy());
         }
         s.setContent(mapCopy);
-
         return s;
     }
 

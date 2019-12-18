@@ -47,6 +47,9 @@ public class VarDeclStmt implements IStmt {
     }
 
     public Map<String,Type> typecheck(Map<String,Type> typeEnv) throws MyException {
+        if(typeEnv.containsKey(name)){
+            throw new MyException("The variable " + name + " is already defined!");
+        }
         typeEnv.put(name,typ);
         return typeEnv;
     }

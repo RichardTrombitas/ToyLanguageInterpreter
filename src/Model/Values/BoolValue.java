@@ -27,4 +27,6 @@ public class BoolValue implements Value{
     public Type getType() {
         return new BoolType();
     }
+
+    public BoolValue copy() { return new BoolValue(val); }
 }

@@ -53,12 +53,20 @@ public class NewStmt implements IStmt {
         return null;
     }
 
-    public Map<String,Type> typecheck(Map<String,Type> typeEnv) throws MyException{
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        if(!typeEnv.containsKey(varName)){
+            throw new MyException("The variable " + varName + " is not defined!");
+        }
         Type typevar = typeEnv.get(varName);
         Type typexp = exp.typecheck(typeEnv);
-        if (typevar.equals(new RefType(typexp)))
-            return typeEnv;
-        else
-            throw new MyException("NEW stmt: right hand side and left hand side have different types ");
+        if (typevar instanceof RefType) {
+            if ((((RefType) typevar).getInner().equals(typexp))) {
+                return typeEnv;
+            } else {
+                throw new MyException("NEW Statement: right hand side and left hand side have different types!");
+            }
+        } else {
+            throw new MyException("The variable" + varName + " is not of RefType!");
+        }
     }
 }

@@ -65,13 +65,16 @@ public class ReadFileStmt implements IStmt {
     }
 
     public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        if(!typeEnv.containsKey(varName)){
+            throw new MyException("The variable " + varName + " is not defined!");
+        }
         Type typevar = typeEnv.get(varName);
         Type typexp = exp.typecheck(typeEnv);
         if (typevar.equals(new IntType())) {
             if (typexp.equals(new StringType())) {
                 return typeEnv;
             } else {
-                throw new MyException("The variable is not of IntType!");
+                throw new MyException("The variable is not of StringType!");
             }
         } else {
             throw new MyException("The variable is not of IntType!");

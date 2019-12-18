@@ -1,4 +1,5 @@
 package Model.Statements;
+
 import Model.Data.IExeStack;
 import Model.Data.IHeap;
 import Model.Data.ISymTable;
@@ -36,30 +37,28 @@ public class IfStmt implements IStmt {
 
         Value cond = exp.eval(symTable, hp);
 
-        if(!cond.getType().equals(new BoolType())){
+        if (!cond.getType().equals(new BoolType())) {
             throw new MyException("conditional expression is not a boolean");
-        }
-        else {
+        } else {
             BoolValue val = (BoolValue) cond;
-            if(val.getVal()){
+            if (val.getVal()) {
                 stk.push(thenS);
-            }
-            else {
+            } else {
                 stk.push(elseS);
             }
         }
         return null;
     }
 
-    public Map<String, Type> typecheck(Map<String,Type> typeEnv) throws MyException{
-        Type typexp=exp.typecheck(typeEnv);
+    public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {
+        Type typexp = exp.typecheck(typeEnv);
         if (typexp.equals(new BoolType())) {
             thenS.typecheck(new HashMap<>(typeEnv));
             elseS.typecheck(new HashMap<>(typeEnv));
             return typeEnv;
-        }
-        else {
-            throw new MyException("The condition of IF has not the type bool");
+        } else {
+            throw new MyException("The IF expression " + exp.toString() + " is of type " + typexp.toString() +
+                    " instead of bool!");
         }
     }
 
