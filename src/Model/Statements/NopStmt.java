@@ -1,11 +1,7 @@
 package Model.Statements;
 
-import Model.MyException;
 import Model.PrgState;
-import Model.Types.BoolType;
 import Model.Types.Type;
-
-import java.util.HashMap;
 import java.util.Map;
 
 public class NopStmt implements IStmt {

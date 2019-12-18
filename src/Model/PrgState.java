@@ -4,6 +4,7 @@ import Model.Data.*;
 import Model.Statements.IStmt;
 
 import java.io.IOException;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class PrgState {
@@ -12,16 +13,8 @@ public class PrgState {
     private IOutputList out;
     private IFileTable fileTable;
     private IHeap heap;
-    private int id;
-    //private IStmt originalProgram;
-
-    private static int code = 0;
-
-    private synchronized static int generateCode() {
-        PrgState.code = PrgState.code + 1;
-        return code;
-    }
-
+    private int threadID;
+    private static AtomicInteger code = new AtomicInteger();
 
     public PrgState(IExeStack stk, ISymTable symtbl, IOutputList ot, IStmt prg, IFileTable ft, IHeap hp) {
         exeStack = stk;
@@ -30,8 +23,7 @@ public class PrgState {
         stk.push(prg);
         fileTable = ft;
         heap = hp;
-        id = generateCode();
-        //originalProgram = deepCopy(prg);
+        threadID = code.incrementAndGet();
     }
 
     public IExeStack getStk() {
@@ -74,13 +66,13 @@ public class PrgState {
         heap = hp;
     }
 
-    public int getId() {
-        return id;
+    public int getThreadID() {
+        return threadID;
     }
 
     @Override
     public String toString() {
-        return "PrgState id: " + id + "\n" + exeStack.toString() + "\n" +
+        return "PrgState id: " + threadID + "\n" + exeStack.toString() + "\n" +
                 symTable.toString() + "\n" + heap.toString() + "\n" + out.toString() + "\n";
     }
 
