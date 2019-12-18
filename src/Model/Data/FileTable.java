@@ -9,28 +9,28 @@ import java.util.Map;
 public class FileTable implements IFileTable {
     private Map<StringValue, BufferedReader> map = new HashMap<>();
 
-    public boolean isDefined(StringValue id) {
+    public synchronized boolean isDefined(StringValue id) {
         return map.containsKey(id);
     }
 
-    public BufferedReader lookup(StringValue id) {
+    public synchronized BufferedReader lookup(StringValue id) {
         return map.get(id);
     }
 
-    public void update(StringValue id, BufferedReader val) {
+    public synchronized void update(StringValue id, BufferedReader val) {
         map.put(id, val);
     }
 
-    public void delete(StringValue id) {
+    public synchronized void delete(StringValue id) {
         map.remove(id);
     }
 
     @Override
-    public String toString() {
+    public synchronized String toString() {
         return "FileTable: " + map.toString();
     }
 
-    public String toStringSpecial() {
+    public synchronized String toStringSpecial() {
         StringBuilder res = new StringBuilder();
         for (Map.Entry<StringValue, BufferedReader> mapElement : map.entrySet()) {
             res.append(mapElement.getKey()).append(" --> ");

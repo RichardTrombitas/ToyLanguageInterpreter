@@ -8,25 +8,25 @@ import java.util.List;
 public class OutputList implements IOutputList {
     private List<Value> list = new ArrayList<>();
 
-    public void add(Value elem) {
+    public synchronized void add(Value elem) {
         list.add(elem);
     }
 
-    public Value getFromIdx(int i) {
+    public synchronized Value getFromIdx(int i) {
         return list.get(i);
     }
 
-    public void setAtIdx(int i, Value elem) {
+    public synchronized void setAtIdx(int i, Value elem) {
         list.set(i, elem);
     }
 
     @Override
-    public String toString() {
+    public synchronized String toString() {
         return "Output: " + list.toString();
     }
 
     @Override
-    public String toStringSpecial() {
+    public synchronized String toStringSpecial() {
         StringBuilder res = new StringBuilder();
         for (Value el : list) {
             res.append(el.toString()).append("\n");
