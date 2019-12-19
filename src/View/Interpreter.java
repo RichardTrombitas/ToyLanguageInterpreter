@@ -220,6 +220,7 @@ public class Interpreter {
                     new CompStmt(new PrintStmt(new VarExp("v")),
                     new PrintStmt(new ReadHeapExp(new VarExp("a")))))))));
 
+        //System.out.println("ex9: " + ex9.typecheck(new HashMap<>()).toString() + "\n");
         ex9.typecheck(new HashMap<>());
 
         SymTable symtbl9 = new SymTable();
@@ -241,7 +242,6 @@ public class Interpreter {
                                  new ValueExp(new BoolValue(true)), 1)))));
 
         //brokenEx1.typecheck(new HashMap<>());
-
 
         TextMenu menu = new TextMenu();
         menu.addCommand(new ExitCommand("0", "exit"));
