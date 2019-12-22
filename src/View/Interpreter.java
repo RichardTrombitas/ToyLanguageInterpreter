@@ -12,10 +12,15 @@ import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Repository.IRepository;
 import Repository.Repository;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 import java.util.HashMap;
 
-public class Interpreter {
+public class Interpreter extends Application {
 
     public static void main(String[] args) throws MyException{
 
@@ -243,17 +248,27 @@ public class Interpreter {
 
         //brokenEx1.typecheck(new HashMap<>());
 
-        TextMenu menu = new TextMenu();
-        menu.addCommand(new ExitCommand("0", "exit"));
-        menu.addCommand(new RunExample("1",ex1.toString(),ctr1));
-        menu.addCommand(new RunExample("2",ex2.toString(),ctr2));
-        menu.addCommand(new RunExample("3",ex3.toString(),ctr3));
-        menu.addCommand(new RunExample("4",ex4.toString(),ctr4));
-        menu.addCommand(new RunExample("5",ex5.toString(),ctr5));
-        menu.addCommand(new RunExample("6",ex6.toString(),ctr6));
-        menu.addCommand(new RunExample("7",ex7.toString(),ctr7));
-        menu.addCommand(new RunExample("8",ex8.toString(),ctr8));
-        menu.addCommand(new RunExample("9",ex9.toString(),ctr9));
-        menu.show();
+//        TextMenu menu = new TextMenu();
+//        menu.addCommand(new ExitCommand("0", "exit"));
+//        menu.addCommand(new RunExample("1",ex1.toString(),ctr1));
+//        menu.addCommand(new RunExample("2",ex2.toString(),ctr2));
+//        menu.addCommand(new RunExample("3",ex3.toString(),ctr3));
+//        menu.addCommand(new RunExample("4",ex4.toString(),ctr4));
+//        menu.addCommand(new RunExample("5",ex5.toString(),ctr5));
+//        menu.addCommand(new RunExample("6",ex6.toString(),ctr6));
+//        menu.addCommand(new RunExample("7",ex7.toString(),ctr7));
+//        menu.addCommand(new RunExample("8",ex8.toString(),ctr8));
+//        menu.addCommand(new RunExample("9",ex9.toString(),ctr9));
+//        menu.show();
+
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage primaryStage) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("GUI/Main.fxml"));
+        primaryStage.setTitle("Toy Language Interpreter");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 }
