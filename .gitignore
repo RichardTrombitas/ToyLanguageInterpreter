@@ -7,3 +7,5 @@ out/production/A2/View/Interpreter.class
 *.xml
 *.xml
 *.xml
+*.class
+*.kotlin_module
