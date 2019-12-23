@@ -12,6 +12,7 @@ import Model.Values.BoolValue;
 import Model.Values.IntValue;
 import Repository.IRepository;
 import Repository.Repository;
+import View.GUI.MainCtrl;
 import View.GUI.PrgSelectionCtrl;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -29,9 +30,8 @@ public class Interpreter extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        PrgSelectionCtrl ctrl = new PrgSelectionCtrl();
-        ctrl.display();
-
+        PrgSelectionCtrl prgSelCtrl = new PrgSelectionCtrl();
+        prgSelCtrl.display();
         Parent root = FXMLLoader.load(getClass().getResource("GUI/Main.fxml"));
         primaryStage.setTitle("Toy Language Interpreter");
         primaryStage.setScene(new Scene(root));

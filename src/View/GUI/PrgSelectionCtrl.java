@@ -34,10 +34,10 @@ import java.util.ResourceBundle;
 public class PrgSelectionCtrl implements Initializable {
 
     @FXML
-    ListView<String> prgListView;
+    private ListView<String> prgListView;
 
     @FXML
-    Button selectButton;
+    private Button selectButton;
 
     private List<Controller> ctrlList;
 

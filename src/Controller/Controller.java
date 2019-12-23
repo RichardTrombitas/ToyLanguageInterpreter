@@ -5,6 +5,7 @@ import Model.PrgState;
 import Model.Values.RefValue;
 import Model.Values.Value;
 import Repository.IRepository;
+import Repository.Repository;
 
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -102,6 +103,9 @@ public class Controller {
         repo.setPrgList(prgList);
     }
 
+    public IRepository getRepository() {
+        return repo;
+    }
 
 }
 
