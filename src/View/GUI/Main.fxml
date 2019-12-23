@@ -127,7 +127,7 @@
             </HBox>
             <ButtonBar prefHeight="63.0" prefWidth="600.0">
               <buttons>
-                  <Button mnemonicParsing="false" text="Choose Program" />
+                  <Button fx:id="choosePrgButton" mnemonicParsing="false" onAction="#handleChoosePrgButtonClick" text="Choose Program" />
                 <Button mnemonicParsing="false" text="Run One Step" />
               </buttons>
                <padding>
