@@ -1,15 +1,13 @@
 package View.GUI;
 
-import javafx.scene.control.Button;
+import Controller.Controller;
 
-import java.io.IOException;
 
 public class MainCtrl {
 
-    public Button choosePrgButton;
+    public static Controller activePrg;
 
-    public void handleChoosePrgButtonClick() throws IOException {
-        PrgSelectionCtrl.display();
+    public static void showData() {
+
     }
-
 }
