@@ -17,6 +17,10 @@ public class FileTable implements IFileTable {
         return map.get(id);
     }
 
+    public Map<StringValue, BufferedReader> getContent() {
+        return map;
+    }
+
     public synchronized void update(StringValue id, BufferedReader val) {
         map.put(id, val);
     }

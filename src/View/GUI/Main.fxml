@@ -33,8 +33,8 @@
                                     <Label text="SymTable" />
                                     <TableView fx:id="symTableView" fixedCellSize="0.1" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
                                       <columns>
-                                        <TableColumn prefWidth="75.0" text="Name" />
-                                        <TableColumn prefWidth="75.0" text="Value" />
+                                        <TableColumn fx:id="symTblNameColumn" prefWidth="75.0" text="Name" />
+                                        <TableColumn fx:id="symTblValueColumn" prefWidth="75.0" text="Value" />
                                       </columns>
                                        <VBox.margin>
                                           <Insets />
@@ -92,8 +92,8 @@
                                     <Label text="Heap" />
                                     <TableView fx:id="heapTableView" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
                                       <columns>
-                                        <TableColumn prefWidth="71.19995152950287" text="Address" />
-                                        <TableColumn prefWidth="51.99999237060547" text="Value" />
+                                        <TableColumn fx:id="heapAddressColumn" prefWidth="71.19995152950287" text="Address" />
+                                        <TableColumn fx:id="heapValueColumn" prefWidth="51.99999237060547" text="Value" />
                                       </columns>
                                        <VBox.margin>
                                           <Insets />

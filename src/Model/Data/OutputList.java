@@ -20,6 +20,14 @@ public class OutputList implements IOutputList {
         list.set(i, elem);
     }
 
+    public List<Value> getList() {
+        return list;
+    }
+
+    public void setList(List<Value> list) {
+        this.list = list;
+    }
+
     @Override
     public synchronized String toString() {
         return "Output: " + list.toString();
