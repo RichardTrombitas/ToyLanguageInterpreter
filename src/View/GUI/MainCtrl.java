@@ -95,6 +95,10 @@ public class MainCtrl implements Initializable {
         exeStackListView.getItems().clear();
         symTableView.getItems().clear();
 
+        if(prgList.size() == 0 || selectedThread - prgList.get(0).getThreadID() < 0) {
+            return;
+        }
+
         PrgState prg = prgList.get(selectedThread - prgList.get(0).getThreadID());
 
         //exeStackListView
