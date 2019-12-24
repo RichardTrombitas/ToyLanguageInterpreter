@@ -2,6 +2,8 @@ package Model.Data;
 
 import Model.Statements.IStmt;
 
+import java.util.Stack;
+
 public interface IExeStack {
     IStmt pop();
 
@@ -10,4 +12,6 @@ public interface IExeStack {
     boolean isEmpty();
 
     String toStringSpecial();
+
+    Stack<IStmt> getContent();
 }

@@ -21,7 +21,7 @@ public class Controller {
         this.repo = repo;
     }
 
-    private Map<Integer, Value> garbageCollector(List<Integer> symTableAddr, IHeap heap) {
+    public Map<Integer, Value> garbageCollector(List<Integer> symTableAddr, IHeap heap) {
         Map<Integer, Value> map = heap.getContent().entrySet().stream()
                 .filter(e -> symTableAddr.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
@@ -32,7 +32,7 @@ public class Controller {
         return newMap;
     }
 
-    private List<Integer> getAddrFromSymTable(Collection<Value> symTableValues) {
+    public List<Integer> getAddrFromSymTable(Collection<Value> symTableValues) {
         return symTableValues.stream()
                 .filter(v -> v instanceof RefValue)
                 .map(v -> {
@@ -42,7 +42,7 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    public void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException {
+    public void oneStepForAllPrg(List<PrgState> prgList, ExecutorService executor) throws InterruptedException {
         prgList.forEach(prg -> {
             try {
                 repo.logPrgStateExec(prg);
@@ -96,7 +96,7 @@ public class Controller {
             prgList.forEach(prg -> addressList.addAll(getAddrFromSymTable(prg.getSymTbl().getContent().values())));
             hp.setContent(garbageCollector(addressList, hp));
 
-            oneStepForAllPrg(prgList);
+            oneStepForAllPrg(prgList, executor);
             prgList = removeCompletedPrg(repo.getPrgList());
         }
         executor.shutdownNow();

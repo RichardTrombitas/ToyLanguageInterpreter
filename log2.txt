@@ -1,6 +1,6 @@
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(int v;(v=4;(while(v>0){(print(v);v=v-1)};print(v))))
+(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))
 
 SymTable:
 
@@ -11,10 +11,9 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-int v
-(v=4;(while(v>0){(print(v);v=v-1)};print(v)))
+(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))
 
 SymTable:
 
@@ -25,10 +24,10 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-int v
-(v=4;(while(v>0){(print(v);v=v-1)};print(v)))
+int a
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
 
@@ -39,12 +38,12 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(v=4;(while(v>0){(print(v);v=v-1)};print(v)))
+int a
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 0
 
 Out:
 
@@ -53,12 +52,12 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(v=4;(while(v>0){(print(v);v=v-1)};print(v)))
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 0
+a --> 0
 
 Out:
 
@@ -67,13 +66,12 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=4
-(while(v>0){(print(v);v=v-1)};print(v))
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 0
+a --> 0
 
 Out:
 
@@ -82,13 +80,13 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=4
-(while(v>0){(print(v);v=v-1)};print(v))
+int b
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 0
+a --> 0
 
 Out:
 
@@ -97,12 +95,13 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(while(v>0){(print(v);v=v-1)};print(v))
+int b
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 4
+a --> 0
 
 Out:
 
@@ -111,12 +110,13 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(while(v>0){(print(v);v=v-1)};print(v))
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 4
+a --> 0
+b --> 0
 
 Out:
 
@@ -125,13 +125,13 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 4
+a --> 0
+b --> 0
 
 Out:
 
@@ -140,13 +140,14 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+a=2+3*5
+(b=a+1;print(b))
 
 SymTable:
-v --> 4
+a --> 0
+b --> 0
 
 Out:
 
@@ -155,14 +156,14 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+a=2+3*5
+(b=a+1;print(b))
 
 SymTable:
-v --> 4
+a --> 0
+b --> 0
 
 Out:
 
@@ -171,14 +172,13 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+(b=a+1;print(b))
 
 SymTable:
-v --> 4
+a --> 17
+b --> 0
 
 Out:
 
@@ -187,15 +187,13 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(b=a+1;print(b))
 
 SymTable:
-v --> 4
+a --> 17
+b --> 0
 
 Out:
 
@@ -204,15 +202,14 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+b=a+1
+print(b)
 
 SymTable:
-v --> 4
+a --> 17
+b --> 0
 
 Out:
 
@@ -221,564 +218,597 @@ FileTable:
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+b=a+1
+print(b)
 
 SymTable:
-v --> 4
+a --> 17
+b --> 0
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+print(b)
 
 SymTable:
-v --> 4
+a --> 17
+b --> 18
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+print(b)
 
 SymTable:
-v --> 3
+a --> 17
+b --> 18
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
 
 SymTable:
-v --> 3
+a --> 17
+b --> 18
 
 Out:
-4
+18
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))
 
 SymTable:
-v --> 3
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+int a
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 3
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+int a
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 3
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 3
+a --> 0
 
 Out:
-4
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 3
+a --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+int b
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 3
+a --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+int b
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 2
+a --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 2
+a --> 0
+b --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 2
+a --> 0
+b --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+a=2+3*5
+(b=a+1;print(b))
 
 SymTable:
-v --> 2
+a --> 0
+b --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+a=2+3*5
+(b=a+1;print(b))
 
 SymTable:
-v --> 2
+a --> 0
+b --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(b=a+1;print(b))
 
 SymTable:
-v --> 2
+a --> 17
+b --> 0
 
 Out:
-4
-3
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(b=a+1;print(b))
 
 SymTable:
-v --> 2
+a --> 17
+b --> 0
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+b=a+1
+print(b)
 
 SymTable:
-v --> 2
+a --> 17
+b --> 0
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+b=a+1
+print(b)
 
 SymTable:
-v --> 1
+a --> 17
+b --> 0
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+print(b)
 
 SymTable:
-v --> 1
+a --> 17
+b --> 18
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
+print(b)
 
 SymTable:
-v --> 1
+a --> 17
+b --> 18
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-(print(v);v=v-1)
-while(v>0){(print(v);v=v-1)}
-print(v)
 
 SymTable:
-v --> 1
+a --> 17
+b --> 18
 
 Out:
-4
-3
-2
+18
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(int a;(int b;(a=2+3*5;(b=a+1;print(b)))))
 
 SymTable:
-v --> 1
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+int a
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 1
 
 Out:
-4
-3
-2
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+int a
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 1
 
 Out:
-4
-3
-2
-1
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-v=v-1
-while(v>0){(print(v);v=v-1)}
-print(v)
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 1
+a --> 0
 
 Out:
-4
-3
-2
-1
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+(int b;(a=2+3*5;(b=a+1;print(b))))
 
 SymTable:
-v --> 0
+a --> 0
 
 Out:
-4
-3
-2
-1
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-while(v>0){(print(v);v=v-1)}
-print(v)
+int b
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 0
+a --> 0
 
 Out:
-4
-3
-2
-1
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
+int b
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 0
+a --> 0
 
 Out:
-4
-3
-2
-1
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
 ExeStack:
-print(v)
+(a=2+3*5;(b=a+1;print(b)))
 
 SymTable:
-v --> 0
+a --> 0
+b --> 0
 
 Out:
-4
-3
-2
-1
 
 FileTable:
 
 Heap:
 
 _______________________________
-PrgState id: 8
+PrgState id: 2
+ExeStack:
+(a=2+3*5;(b=a+1;print(b)))
+
+SymTable:
+a --> 0
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+a=2+3*5
+(b=a+1;print(b))
+
+SymTable:
+a --> 0
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+a=2+3*5
+(b=a+1;print(b))
+
+SymTable:
+a --> 0
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+(b=a+1;print(b))
+
+SymTable:
+a --> 17
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+(b=a+1;print(b))
+
+SymTable:
+a --> 17
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+b=a+1
+print(b)
+
+SymTable:
+a --> 17
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+b=a+1
+print(b)
+
+SymTable:
+a --> 17
+b --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+print(b)
+
+SymTable:
+a --> 17
+b --> 18
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
+ExeStack:
+print(b)
+
+SymTable:
+a --> 17
+b --> 18
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 2
 ExeStack:
 
 SymTable:
-v --> 0
+a --> 17
+b --> 18
 
 Out:
-4
-3
-2
-1
-0
+18
 
 FileTable:
 

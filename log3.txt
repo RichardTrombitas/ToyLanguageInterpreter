@@ -1,0 +1,300 @@
+PrgState id: 3
+ExeStack:
+(boolean a;(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+boolean a
+(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+boolean a
+(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v))))
+
+SymTable:
+a --> false
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+(int v;(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v))))
+
+SymTable:
+a --> false
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+int v
+(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))
+
+SymTable:
+a --> false
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+int v
+(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))
+
+SymTable:
+a --> false
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))
+
+SymTable:
+a --> false
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+(a=true;(IF(a) THEN (v=2) ELSE (v=3);print(v)))
+
+SymTable:
+a --> false
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+a=true
+(IF(a) THEN (v=2) ELSE (v=3);print(v))
+
+SymTable:
+a --> false
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+a=true
+(IF(a) THEN (v=2) ELSE (v=3);print(v))
+
+SymTable:
+a --> false
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+(IF(a) THEN (v=2) ELSE (v=3);print(v))
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+(IF(a) THEN (v=2) ELSE (v=3);print(v))
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+IF(a) THEN (v=2) ELSE (v=3)
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+IF(a) THEN (v=2) ELSE (v=3)
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+v=2
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+v=2
+print(v)
+
+SymTable:
+a --> true
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+print(v)
+
+SymTable:
+a --> true
+v --> 2
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+print(v)
+
+SymTable:
+a --> true
+v --> 2
+
+Out:
+
+FileTable:
+
+Heap:
+
+_______________________________
+PrgState id: 3
+ExeStack:
+
+SymTable:
+a --> true
+v --> 2
+
+Out:
+2
+
+FileTable:
+
+Heap:
+
+_______________________________

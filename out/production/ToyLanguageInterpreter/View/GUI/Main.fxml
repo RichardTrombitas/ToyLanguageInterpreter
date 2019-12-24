@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.MainCtrl">
+<AnchorPane minHeight="-Infinity" prefHeight="523.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.MainCtrl">
    <children>
       <VBox alignment="BOTTOM_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -12,7 +12,7 @@
                <children>
                   <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefWidth="662.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <SplitPane dividerPositions="0.25, 0.4, 0.55, 0.7, 0.85" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <SplitPane dividerPositions="0.06539235412474849, 0.15191146881287726, 0.6941649899396378, 0.8028169014084507, 0.9185110663983903" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <items>
                               <VBox alignment="TOP_CENTER">
                                  <padding>
@@ -30,8 +30,8 @@
                               </VBox>
                               <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Label text="SymTable" />
-                                    <TableView fx:id="symTableView" fixedCellSize="0.1" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
+                                    <Label fx:id="symTblLabel" text="SymTable" />
+                                    <TableView fx:id="symTableView" nodeOrientation="LEFT_TO_RIGHT" VBox.vgrow="ALWAYS">
                                       <columns>
                                         <TableColumn fx:id="symTblNameColumn" prefWidth="75.0" text="Name" />
                                         <TableColumn fx:id="symTblValueColumn" prefWidth="75.0" text="Value" />
@@ -50,7 +50,7 @@
                               </VBox>
                               <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Label text="ExeStack" />
+                                    <Label fx:id="exeStackLabel" text="ExeStack" />
                                     <ListView fx:id="exeStackListView" VBox.vgrow="ALWAYS">
                                        <VBox.margin>
                                           <Insets top="10.0" />

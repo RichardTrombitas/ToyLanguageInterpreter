@@ -34,6 +34,7 @@ public class Interpreter extends Application {
         prgSelCtrl.display();
         Parent root = FXMLLoader.load(getClass().getResource("GUI/Main.fxml"));
         primaryStage.setTitle("Toy Language Interpreter");
+        primaryStage.setMaximized(true);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

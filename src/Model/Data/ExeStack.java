@@ -28,10 +28,14 @@ public class ExeStack implements IExeStack {
 
     public String toStringSpecial() {
         StringBuilder res = new StringBuilder();
-        ListIterator li = stack.listIterator(stack.size());
+        ListIterator<IStmt> li = stack.listIterator(stack.size());
         while (li.hasPrevious()) {
             res.append(li.previous()).append('\n');
         }
         return res.toString();
+    }
+
+    public Stack<IStmt> getContent() {
+        return stack;
     }
 }
