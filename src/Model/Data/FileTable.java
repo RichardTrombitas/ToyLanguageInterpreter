@@ -17,7 +17,7 @@ public class FileTable implements IFileTable {
         return map.get(id);
     }
 
-    public Map<StringValue, BufferedReader> getContent() {
+    public synchronized Map<StringValue, BufferedReader> getContent() {
         return map;
     }
 

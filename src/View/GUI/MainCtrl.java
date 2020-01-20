@@ -18,12 +18,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.util.Pair;
 
 import java.net.URL;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 
 
 public class MainCtrl implements Initializable {
@@ -61,6 +61,15 @@ public class MainCtrl implements Initializable {
     private TableColumn<HeapEntry, Value> heapValueColumn;
     @FXML
     private Button runOneStepButton;
+    @FXML
+    private TableView<BarrierTblEntry> barrierTableView;
+    @FXML
+    private TableColumn<BarrierTblEntry, Integer> barrierTblIdxColumn;
+    @FXML
+    private TableColumn<BarrierTblEntry, Integer> barrierTblNColumn;
+    @FXML
+    private TableColumn<BarrierTblEntry, List<Integer>> barrierTblIDsColumn;
+
 
     public ObservableList<HeapEntry> getHeapEntries(IHeap heap) {
         ObservableList<HeapEntry> heapEntries = FXCollections.observableArrayList();
@@ -75,6 +84,16 @@ public class MainCtrl implements Initializable {
 
 
         return heapEntries;
+    }
+
+    public ObservableList<BarrierTblEntry> getBarrierTblEntries(IBarrierTable bt) {
+        ObservableList<BarrierTblEntry> btEntries = FXCollections.observableArrayList();
+        for (Map.Entry<Integer, Pair<Integer, List<Integer>>> mapElement : bt.getContent().entrySet()) {
+            btEntries.add(new BarrierTblEntry(mapElement.getKey(), mapElement.getValue().getKey(),
+                    mapElement.getValue().getValue()));
+        }
+
+        return btEntries;
     }
 
     public ObservableList<SymTblEntry> getSymTblEntries(ISymTable symTbl) {
@@ -95,9 +114,13 @@ public class MainCtrl implements Initializable {
         exeStackListView.getItems().clear();
         symTableView.getItems().clear();
 
-        if(prgList.size() == 0 || selectedThread - prgList.get(0).getThreadID() < 0) {
+        if (prgList.size() == 0 || selectedThread - prgList.get(0).getThreadID() < 0) {
             return;
         }
+
+
+        List<PrgState> ls = activeExample.getRepository().getPrgList();
+        int lastIdx = ls.size();
 
         PrgState prg = prgList.get(selectedThread - prgList.get(0).getThreadID());
 
@@ -120,14 +143,20 @@ public class MainCtrl implements Initializable {
         heapTableView.getItems().clear();
         outputListView.getItems().clear();
         fileTableListView.getItems().clear();
+        barrierTableView.getItems().clear();
 
         IHeap heap = prgList.get(0).getHeap();
         IOutputList outList = prgList.get(0).getOutList();
         IFileTable fileTable = prgList.get(0).getFileTable();
+        IBarrierTable barrierTable = prgList.get(0).getBarrierTable();
 
         //prgIDsListView
+        int first = prgList.get(0).getThreadID();
+        int count = 0;
         for (PrgState prg : prgList) {
-            prgIDsListView.getItems().add(prg.getThreadID());
+//            prgIDsListView.getItems().add(prg.getThreadID());
+            prgIDsListView.getItems().add(first + count);
+            count++;
         }
 
         //nrOfPrgStatesTextField
@@ -138,6 +167,13 @@ public class MainCtrl implements Initializable {
         heapValueColumn.setCellValueFactory(new PropertyValueFactory<>("value"));
 
         heapTableView.setItems(getHeapEntries(heap));
+
+        //barrierTableView
+        barrierTblIdxColumn.setCellValueFactory(new PropertyValueFactory<>("index"));
+        barrierTblNColumn.setCellValueFactory(new PropertyValueFactory<>("n"));
+        barrierTblIDsColumn.setCellValueFactory(new PropertyValueFactory<>("prgStateIDs"));
+
+        barrierTableView.setItems(getBarrierTblEntries(barrierTable));
 
         //outputListView
         for (Value val : outList.getList()) {
@@ -173,8 +209,7 @@ public class MainCtrl implements Initializable {
             showData();
 
             prgList = activeExample.removeCompletedPrg(activeExample.getRepository().getPrgList());
-        }
-        else {
+        } else {
             executor.shutdownNow();
             activeExample.getRepository().setPrgList(prgList);
             prgIDsListView.getItems().clear();
@@ -189,7 +224,7 @@ public class MainCtrl implements Initializable {
         executor = Executors.newFixedThreadPool(2);
         prgList = activeExample.getRepository().getPrgList();
         prgIDsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
-            if(prgIDsListView.getSelectionModel().getSelectedItem() != null) {
+            if (prgIDsListView.getSelectionModel().getSelectedItem() != null) {
                 MainCtrl.selectedThread = prgIDsListView.getSelectionModel().getSelectedItem();
                 symTblLabel.setText("SymTbl (" + selectedThread + ")");
                 exeStackLabel.setText("ExeStack (" + selectedThread + ")");

@@ -26,8 +26,9 @@ public class ForkStmt implements IStmt {
         IHeap hp = state.getHeap();
         IFileTable ft = state.getFileTable();
         IOutputList out = state.getOutList();
+        IBarrierTable bt = state.getBarrierTable();
 
-        return new PrgState(es, symTbl, out, stmt, ft, hp);
+        return new PrgState(es, symTbl, out, stmt, ft, hp, bt);
     }
 
     public Map<String, Type> typecheck(Map<String, Type> typeEnv) throws MyException {

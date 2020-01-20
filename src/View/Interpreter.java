@@ -10,6 +10,7 @@ import Model.Types.IntType;
 import Model.Types.RefType;
 import Model.Values.BoolValue;
 import Model.Values.IntValue;
+import Model.Values.Value;
 import Repository.IRepository;
 import Repository.Repository;
 import View.GUI.MainCtrl;
@@ -24,7 +25,7 @@ import java.util.HashMap;
 
 public class Interpreter extends Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException {
         launch(args);
     }
 

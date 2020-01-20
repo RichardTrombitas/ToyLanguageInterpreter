@@ -41,6 +41,8 @@ public class Repository implements IRepository {
         logFile.write(prgState.getFileTable().toStringSpecial() + "\n");
         logFile.write("Heap:\n");
         logFile.write(prgState.getHeap().toStringSpecial() + "\n");
+        logFile.write("BarrierTable:\n");
+        logFile.write(prgState.getBarrierTable().toStringSpecial() + "\n");
         logFile.write("_______________________________\n");
         logFile.close();
     }

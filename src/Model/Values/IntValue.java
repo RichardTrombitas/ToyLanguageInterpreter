@@ -1,5 +1,7 @@
 package Model.Values;
 
+import Model.MyException;
+import Model.Types.BoolType;
 import Model.Types.IntType;
 import Model.Types.Type;
 
@@ -11,8 +13,12 @@ public class IntValue implements Value {
         val = v;
     }
 
-    public boolean equals(IntValue another) {
-        return val == another.getVal();
+    public boolean equals(Value another) throws MyException {
+        if(!another.getType().equals(new IntType())){
+            throw new MyException("The second value is not of IntType!");
+        }
+
+        return val == ((IntValue) another).getVal();
     }
 
     public int getVal() {

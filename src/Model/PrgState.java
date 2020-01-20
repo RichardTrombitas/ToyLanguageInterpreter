@@ -13,16 +13,18 @@ public class PrgState {
     private IOutputList out;
     private IFileTable fileTable;
     private IHeap heap;
+    private IBarrierTable barrierTable;
     private int threadID;
     private static AtomicInteger code = new AtomicInteger();
 
-    public PrgState(IExeStack stk, ISymTable symtbl, IOutputList ot, IStmt prg, IFileTable ft, IHeap hp) {
+    public PrgState(IExeStack stk, ISymTable symtbl, IOutputList ot, IStmt prg, IFileTable ft, IHeap hp, IBarrierTable bt) {
         exeStack = stk;
         symTable = symtbl;
         out = ot;
         stk.push(prg);
         fileTable = ft;
         heap = hp;
+        barrierTable = bt;
         threadID = code.incrementAndGet();
     }
 
@@ -64,6 +66,12 @@ public class PrgState {
 
     public void setHeap(IHeap hp) {
         heap = hp;
+    }
+
+    public IBarrierTable getBarrierTable() { return barrierTable; }
+
+    public void setBarrierTable(IBarrierTable barrierTable) {
+        this.barrierTable = barrierTable;
     }
 
     public int getThreadID() {

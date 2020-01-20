@@ -1,5 +1,6 @@
 package Model.Values;
 
+import Model.MyException;
 import Model.Types.BoolType;
 import Model.Types.Type;
 
@@ -11,8 +12,12 @@ public class BoolValue implements Value {
         val = v;
     }
 
-    public boolean equals(BoolValue another) {
-        return val == another.getVal();
+    public boolean equals(Value another) throws MyException {
+        if(!another.getType().equals(new BoolType())){
+            throw new MyException("The second value is not of BoolType!");
+        }
+
+        return val == ((BoolValue) another).getVal();
     }
 
     public boolean getVal() {

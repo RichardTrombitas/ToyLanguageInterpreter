@@ -1,0 +1,6764 @@
+PrgState id: 11
+ExeStack:
+(int v;(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+
+SymTable:
+v --> -1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+30
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int v;(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+
+SymTable:
+v --> -1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+30
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int v;(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+
+SymTable:
+v --> -1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+30
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int v;(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int v
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int x;(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int x
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(int y;(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+int y
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(v=0;(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10)))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=0
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(repeat((fork((print(v);v=v-1));v=v+1)) until (v==3);(x=1;(no operation;(y=3;(no operation;print(v*10))))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+repeat((fork((print(v);v=v-1));v=v+1)) until (v==3)
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+((fork((print(v);v=v-1));v=v+1);while(not(v==3)){(fork((print(v);v=v-1));v=v+1)})
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 13
+ExeStack:
+
+SymTable:
+v --> -1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(fork((print(v);v=v-1));v=v+1)
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 14
+ExeStack:
+
+SymTable:
+v --> 0
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+fork((print(v);v=v-1))
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+v=v+1
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+(print(v);v=v-1)
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+while(not(v==3)){(fork((print(v);v=v-1));v=v+1)}
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+print(v)
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(x=1;(no operation;(y=3;(no operation;print(v*10)))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+v=v-1
+
+SymTable:
+v --> 2
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 15
+ExeStack:
+
+SymTable:
+v --> 1
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+x=1
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 0
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;(y=3;(no operation;print(v*10))))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(y=3;(no operation;print(v*10)))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+y=3
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 0
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+(no operation;print(v*10))
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+no operation
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+print(v*10)
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
+PrgState id: 11
+ExeStack:
+
+SymTable:
+v --> 3
+x --> 1
+y --> 3
+
+Out:
+0
+1
+2
+30
+
+FileTable:
+
+Heap:
+
+BarrierTable:
+
+_______________________________
